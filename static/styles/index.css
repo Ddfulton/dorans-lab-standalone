@@ -1,0 +1,437 @@
+
+
+    @font-face {
+      font-family: radnika-regular;
+      src: url(../radnika_font/Radnika-Regular.otf);
+    }
+
+    @font-face {
+      font-family: radnika-semibold;
+      src: url(../radnika_font/Radnika-SemiBold.otf);
+    }
+
+    @font-face {
+      font-family: radnika-black;
+      src: url(../radnika_font/Radnika-Black.otf);
+    }
+
+    @font-face {
+      font-family: radnika-bold-condensed;
+      src: url(../radnika_font/Radnika-BoldCondensed.otf);
+    }
+
+    @font-face {
+      font-family: radnika-italic;
+      src: url(../radnika_font/Radnika-Italic.otf);
+    }
+
+    @font-face {
+      font-family: radnika-bold;
+      src: url(../radnika_font/Radnika-Bold.otf);
+    }
+
+    @font-face {
+        font-family: radnika-condensed;
+        src: url(../radnika_font/Radnika-Condensed.otf);
+    }
+
+    @font-face {
+        font-family: radnika-medium-condensed;
+        src: url(../radnika_font/Radnika-MediumCondensed.otf);
+    }
+
+    .footer-disclaimer {
+        font-family: radnika-condensed;
+        font-size: 10px;
+        color: #b1aabc;
+    }
+
+    .footer-disclaimer-mobile {
+        font-family: radnika-condensed;
+        font-size: 8px;
+        color: #b1aabc;
+    }
+
+    .copyright {
+        font-family: radnika-regular;
+        font-size: 12px;
+        color: #b1aabc;
+    }
+
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden
+    }
+    
+    .fill img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%
+    }
+    
+    .container img {
+        width: 100%;
+    }
+    
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+    
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+    }
+    
+    .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+    }
+    
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    
+
+    #champ1 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #champ1-mobile {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
+        background-position: center;
+        background-size: cover;
+        margin-right: 20px;
+    }
+    
+    #champ2 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #champ2-mobile {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
+        background-position: center;
+        background-size: cover;
+        margin-right: 20px;
+    }
+    
+    #champ3 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #champ3-mobile {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
+        background-position: center;
+        background-size: cover;
+        margin-right: 20px;
+    }
+    
+    #champ4 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #champ4-mobile {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
+        background-position: center;
+        background-size: cover;
+        margin-right: 20px;
+    }
+    
+    #champ5 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #champ5-mobile {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
+        background-position: center;
+        background-size: cover;
+        margin-right: 20px;
+    }
+    
+    .no-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .navbar-nav > li {
+        padding-left: 18px;
+        padding-right: 18px;
+        font-family: radnika-semibold;
+        font-size: 15px;
+    }
+
+    .navbar {
+        border-bottom: 1px black solid;
+    }
+    
+    #headline-content b {
+      font-family: radnika-bold-condensed;
+      font-size: 38px;
+    }
+
+    #headline-content-mobile b {
+      font-family: radnika-bold-condensed;
+      font-size: 24px;
+      margin-left: 20px;
+    }
+
+    #secondary-headline b {
+      font-family: radnika-bold-condensed;
+      font-size: 20px;
+    }
+
+    div.content h3 {
+      font-family: radnika-bold-condensed;
+      font-size: 30px;
+    }
+
+    div.content b {
+      color: black;
+    }
+
+    div.content img {
+      width: 84%;
+      height: 100%;
+    }
+
+    div.content p.content-text {
+      font-family: radnika-regular;
+      font-size: 12px;
+      color: #b1aabc;
+    }
+
+    div.content p.author-and-date {
+      font-family: radnika-italic;
+      font-size: 8px;
+      text-align: right;
+    }
+
+    div.content p.author-and-date-mobile {
+      font-family: radnika-italic;
+      font-size: 7px;
+      text-align: right;
+    }
+
+    a.mail-to:hover {
+        color: black !important;
+    }
+    
+    div#top-champions h6 b {
+      font-family: radnika-bold-condensed;
+      font-size: 20px;
+    }
+
+    div#top-champions p#last-updated {
+      font-family: radnika-italic;
+      font-size: 9px;
+    }
+
+    div#top-champions .top-champion b {
+      font-family: radnika-bold;
+      font-size: 12px;
+    }
+    
+    div#top-champions p.winrate {
+      font-family: radnika-regular;
+      font-size: 9px;
+    }
+
+    div#top-champions p.top-champion-ordinal {
+      font-family: radnika-bold;
+      font-size: 20px;
+    }
+
+    button.recommended-matchup-button {
+        font-family: radnika-regular;
+        font-size: 8px;
+        color: #b1aabc;
+        border: 1px solid #b1aabc;
+        outline: none;
+        border-radius: 2px;
+    }
+
+    button.recommended-matchup-button-mobile {
+        font-family: radnika-regular;
+        font-size: 8px;
+        color: #b1aabc;
+        border: 1px solid #b1aabc;
+        outline: none;
+    }
+
+    button.recommended-matchup-button:active {
+        transform: translateY(2px);
+    }
+
+    #twitter-icon:hover {
+        content:url('static/mockup-assets/twitter-onHover.png');
+    }
+
+    #facebook-icon:hover {
+        content:url('static/mockup-assets/facebook-onHover.png');
+    }
+
+    .stats-headline-text-mobile b {
+        font-size: 15px;
+    }
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background: linear-gradient(45deg, #ba3f5d, #496bb9);   
+    overflow-x: hidden; 
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+    margin-bottom: 20px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 17px;
+    color: #eaeaea;
+    font-family: radnika-regular;
+    display: block; 
+    transition: 0.3s; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+
+.btn {
+    background: linear-gradient(90deg, #ba3f5d, #496bb9);
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    font-family: radnika-regular; 
+    font-size: 6px; 
+    height: 15px;
+    letter-spacing: 0px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 130px;
+    z-index: -2;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn span {
+    align-items: center;
+    background: white;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background .5s ease;
+    width: 100%;
+}
+
+.btn:hover span {
+    background: transparent;
+}
+
+
+.see-recommended-matchup-text {
+    text-transform: uppercase;
+    font-size: 5px;
+    margin-top: 6px;
+    font-family: radnika-regular;
+    background: linear-gradient(45deg, #ba3f5d, #496bb9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.desktop-headline-text {
+    background: #f9f9f9;
+}
+
+span {
+    z-index: -3;
+}
