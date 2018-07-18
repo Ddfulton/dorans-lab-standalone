@@ -17,11 +17,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </script>
+    <script type="text/javascript" src="static/disablescroll.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 </head>
 
 <!-- <body style="background-image: url(https://saltykai.com/wp-content/uploads/2016/09/watercolor-1.jpg); font-family: Montserrat;"> -->
-<body style="background-color: #f9f9f9">
+<body style="background-color: #F8F8F8">
     <script type="text/javascript">
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
@@ -31,6 +32,9 @@
 
         // Change onclick to closeNav()
         document.getElementById("hamburger").onclick = closeNav;
+
+        // Prevent scrolling
+        $(window).disablescroll();
     }
 
     /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -42,6 +46,10 @@
 
         // Change onclick to openNav()
         document.getElementById("hamburger").onclick = openNav;
+
+        // Allow scrolling
+        $(window).disablescroll("undo");
+
     }
 </script>
         <div class="container" id="main">
@@ -52,7 +60,7 @@
             <div class="d-none d-sm-block">
                     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
                         <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
-                        <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto;"></a>
+                        <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px;"></a>
                         <div>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -73,10 +81,6 @@
             </div>
 
             <!-- VISIBLE ONLY ON MOBILE: THIS IS THE MOBILE NAVBAR -->
-
-
-            
-            
             <div class="d-sm-none">
                 <div id="myNav" class="overlay">
               <!-- Overlay content -->
@@ -90,11 +94,11 @@
             </div>
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
 
-                    <button onclick="openNav()" class="top-right" id="hamburger" type="button" >
+                    <button onclick="openNav()" class="top-right" id="hamburger" type="button">
                     <!-- <span class="navbar-toggler-icon"></span> -->
-                    <img src="static/hamburger.png" id="hamburger-img" style="width: 25px;">
+                    <img src="static/hamburger.png" id="hamburger-img" style="width: 20px; height: auto; margin-top: -12px; margin-right: -10px;">
                   </button>
-                    <a class="navbar-brand" href="#"><img src="static/dorans-lab-logo-type.png" style="width: 40%; height: 35%;"></a>
+                    <a class="navbar-brand" href="#" style="margin-bottom: -10px; margin-top: -10px;"><img src="static/dorans-lab-logo-type.png" style="width: 40%; height: 35%; min-width: 100px;"></a>
 
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="background: linear-gradient(45deg, #ba3f5d, #496bb9); margin-left: -20px; margin-right: -20px;">
                     </div>
@@ -106,7 +110,7 @@
             <!-- END MOBILE NAVBAR  -->
             <br><br><br><br>
             <div class="d-sm-none" style="margin-top: -38px;">
-                <p style="margin-bottom: 10px; margin-top: 10px; color: gray; font-family: radnika-condensed; text-align: center;" >[ F E A T U R E D ]</p>
+                <p class="featured-recent-stats" style="margin-bottom: 10px; margin-top: 10px; color: gray; font-family: radnika-condensed; text-align: center;" >[ F E A T U R E D ]</p>
             </div>
 
 
@@ -115,15 +119,15 @@
                 <div class="row">
                     <div class="col-xs-12" style="margin-left: 15px; margin-right: 15px;" id="headline-content-mobile">
                         <div class="fill">    
-                            <a><img class="img-fluid" src="static/mockup-assets/lulu-figure-blur.png" style="max-width: 100%;"></a>
-                            <h1 style="margin-top: 20px; text-align: left; position: absolute; left: 15px;">
-                                <b class="mobile-headline-text" style="color: blue; background: #EEEEEE;">Level up:</b>
+                            <a><img class="img-fluid headline-img-mobile" src="static/mockup-assets/lulu-figure-blur.png" style="max-width: 100%;"></a>
+                            <h1 style="margin-top: 10px; text-align: left; position: absolute; left: 6px;">
+                                <b class="mobile-headline-text" style="color: blue; background: #F8F8F8;">Level up:</b>
                             </h1>
-                            <h1 style="margin-top: 55px; text-align: left; position: absolute; left: 15px;">
-                                <b class="mobile-headline-text" style="color: black; background: #EEEEEE; ">Know Your</b>
+                            <h1 style="margin-top: 45px; text-align: left; position: absolute; left: 6px;">
+                                <b class="mobile-headline-text" style="color: black; background: #F8F8F8; ">Know Your</b>
                             </h1>
-                            <h1 style="margin-top: 90px; text-align: left; position: absolute; left: 15px;">
-                                <b class="mobile-headline-text" style="color: black; background: #EEEEEE; ">Crit Chance</b>
+                            <h1 style="margin-top: 80px; text-align: left; position: absolute; left: 6px;">
+                                <b class="mobile-headline-text" style="color: black; background: #F8F8F8; ">Crit Chance</b>
                             </h1>
                         </div>
                     </div>
@@ -133,14 +137,14 @@
                     <div class="col-xs-12" style="margin-left: 15px; margin-right: 15px;" id="headline-content-mobile">
                         <div class="fill">    
                             <a><img class="img-fluid" src="static/mockup-assets/summoners-cup.jpg" style="max-width: 100%;"></a>
-                            <h1 style="margin-top: 20px; text-align: left; position: absolute; left: 15px;">
-                                <b class="mobile-headline-text" style="color: black; background: #EEEEEE;">DraftWinner: A Tool To</b>
+                            <h1 style="margin-top: 10px; text-align: left; position: absolute; left: 6px;">
+                                <b class="mobile-headline-text" style="color: black; background: #F8F8F8;">DraftWinner: A Tool To</b>
                             </h1>
-                            <h1 style="margin-top: 55px; text-align: left; position: absolute; left: 15px;">
-                                <b class="mobile-headline-text" style="color: black; background: #EEEEEE; ">Help You Win At Champion</b>
+                            <h1 style="margin-top: 45px; text-align: left; position: absolute; left: 6px;">
+                                <b class="mobile-headline-text" style="color: black; background: #F8F8F8; ">Help You Win At Champion</b>
                             </h1>
-                            <h1 style="margin-top: 90px; text-align: left; position: absolute; left: 15px;">
-                                <b class="mobile-headline-text" style="color: black; background: #EEEEEE; ">Select</b>
+                            <h1 style="margin-top: 80px; text-align: left; position: absolute; left: 6px; padding-bottom: 3px;">
+                                <b class="mobile-headline-text" style="color: black; background: #F8F8F8; ">Select</b>
                             </h1>
                         </div>
                     </div>
@@ -163,9 +167,9 @@
                             <div class="bottom-right">
 
                                 
-                                <h1 style="text-align: right;"><b class="desktop-headline-text" style="color: black; ">Level up:</b></h1>
-                                <h1 style="text-align: right;"> <b style="color: black;" class="desktop-headline-text" >Know your</b></h1>
-                                <h1 style="text-align: right;"><b style="color: black;" class="desktop-headline-text">Crit Chance</b></h1>
+                                <a><h1 style="text-align: right;"><b class="desktop-headline-text" style="color: black; ">Level up:</b></h1></a>
+                                <a><h1 style="text-align: right;"> <b style="color: black;" class="desktop-headline-text" >Know your</b></h1></a>
+                                <a><h1 style="text-align: right;"><b style="color: black;" class="desktop-headline-text">Crit Chance</b></h1></a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +219,7 @@
 
             <!-- Mobile -->
             <div class="d-sm-none">
-                <p style="margin-bottom: 10px; color: gray; font-family: radnika-condensed; text-align: center;" >[ R E C E N T ]</p>
+                <p class="featured-recent-stats" style="margin-bottom: 10px; color: gray; font-family: radnika-condensed; text-align: center;" >[ R E C E N T ]</p>
             </div>
 
 
@@ -241,9 +245,9 @@
 
                                 <!-- Mobile -->
                                 <div class="d-sm-none stats-headline-text-mobile">
-                                    <h3 style="text-align: right; margin-bottom: -14px;"><b>Win Conditions: How</b></h3>
-                                    <h3 style="text-align: right; margin-bottom: -14px;"><b>Much does Champ Select</b></h3>
-                                    <h3 style="text-align: right;"><b>Select Matter?</b></h3>
+                                    <h3 style="text-align: right; margin-bottom: -14px;"><b class="mobile-content-headline-text">Which Champions Have</b></h3>
+                                    <h3 style="text-align: right; margin-bottom: -14px;"><b class="mobile-content-headline-text">the Greatest Game</b></h3>
+                                    <h3 style="text-align: right;"><b class="mobile-content-headline-text">Impact?</b></h3>
                                 </div>
 
                                 <!-- Desktop -->
@@ -257,7 +261,7 @@
                         <!-- Hide content text on mobile -->
                         <div class="col-sm-4 text-center">
                             <div class="d-none d-sm-block">
-                                <p class="content-text" style="text-align: left;">Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games. Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games. Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games.</p>
+                                <p class="content-text" style="text-align: left;"></p>  
                             </div>
                         </div>
                     </div>
@@ -285,9 +289,9 @@
                             <div class="top-right">
                                 <!-- Mobile -->
                                 <div class="d-sm-none stats-headline-text-mobile">
-                                    <h3 style="text-align: right; margin-bottom: -14px;"><b>Which Champions Have</b></h3>
-                                    <h3 style="text-align: right; margin-bottom: -14px;"><b>the Greatest Game</b></h3>
-                                    <h3 style="text-align: right;"><b>Impact?</b></h3>
+                                    <h3 style="text-align: right; margin-bottom: -14px;"><b class="mobile-content-headline-text">Which Champions Have</b></h3>
+                                    <h3 style="text-align: right; margin-bottom: -14px;"><b class="mobile-content-headline-text">the Greatest Game</b></h3>
+                                    <h3 style="text-align: right;"><b class="mobile-content-headline-text">Impact?</b></h3>
                                 </div>
 
                                 <!-- Desktop -->
@@ -314,7 +318,8 @@
                     
                     <!-- Mobile -->
                     <div class="d-sm-none">
-                        <p style="margin-bottom: -23px; margin-top: 10px; color: gray; font-family: radnika-condensed; text-align: center;" >[ S T A T S ]</p>
+                        <br>
+                        <p class="featured-recent-stats" style="margin-bottom: -23px; margin-top: 10px; color: gray; font-family: radnika-condensed; text-align: center;" >[ S T A T S ]</p>
                         
                     </div>
                     <br>
@@ -553,7 +558,7 @@
         <div class="d-sm-none">
             <div class="row m-0">
                 <div class="col-3 m-0">
-                    <img class="img-fluid" src="static/mockup-assets/dorans-lab-logo.png" style="height: 100px; width: auto;"> 
+                    <img class="img-fluid" src="static/mockup-assets/dorans-lab-logo.png" style="height: 70px; width: auto;"> 
                 </div>
                 <div class="col-9 m-0">
                     <div class="row">
@@ -561,19 +566,17 @@
                             Doran's Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends or Riot Games are trademarks or registered trademarks of Riot Games, Inc. Copyright Riot Games, Inc.
                             <br><br>
                             © 2018 <b>Laber Labs</b>
-                            <br><br>
+                            <br>
                             Contact Us
                             <u><a style="color: #b1aabc;" class="mail-to" href="mailto:LaberLabsLol@gmail.com">LaberLabsLol@gmail.com</a></u>
                             </p>
 
-
-
-                    </p> 
+                            
                     </div>
-                    <div class="row bottom-right">
-                        <img id="facebook-icon" src="static/mockup-assets/facebook-passive.png" style="height: 22px; width: auto; margin-right: 10px;">
-                        <img id="twitter-icon" src="static/mockup-assets/twitter-passive.png" style="height: 22px; width: auto; margin-right: 10px; margin-bottom: 0px;">
-                    </div>
+                    <div class="row">
+                                <a href="https://twitter.com/laberlabs?lang=en"><img id="facebook-icon-mobile" class="bottom-right" src="static/mockup-assets/facebook-passive.png" style="height: 22px; width: auto; bottom: -12px; "></a>
+                                <img id="twitter-icon-mobile" class="bottom-right" src="static/mockup-assets/twitter-passive.png" style="height: 22px; width: auto; margin-right: 26px; bottom: -12px;">
+                            </div>
 
                 </div>
             </div>
@@ -586,18 +589,18 @@
                 <div class="col-md-5" style="margin-top: 10px;">
                     <p class="footer-disclaimer">Doran's Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends or Riot Games are trademarks or registered trademarks of Riot Games, Inc. Copyright Riot Games, Inc.</p>
                     
-                    <p class="copyright">Copyright 2018 <u>Laber Labs</u></p>
+                    <p class="copyright">Copyright 2018 <u><a href="http://www.laber-labs.com/">Laber Labs</a></u></p>
                 </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-4">
                     <img id="facebook-icon" src="static/mockup-assets/facebook-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;">
-                    <img id="twitter-icon" src="static/mockup-assets/twitter-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;">
+                    <a href="https://twitter.com/laberlabs?lang=en"><img id="twitter-icon" src="static/mockup-assets/twitter-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;"></a>
                     <br/><br/>
                     <p style="font-family: radnika-bold-condensed; font-size: 12px; text-align: right; color: #b1aabc;">Contact Us</p>
                     <p class="mail-to" style="font-family: radnika-medium-condensed; font-size: 12px; text-align: right;"><u><a style="color: #b1aabc; margin-top: 50px;" class="mail-to" href="mailto:LaberLabsLol@gmail.com">LaberLabsLol@gmail.com</a></u></p>
                 </div>
                 <div class="col-md-1">
-                    <img class="img-fluid" src="static/mockup-assets/dorans-lab-logo.png" style="height: 100px; width: auto;">
+                    <img class="img-fluid" src="static/Sm-dorans-lab-icon.png" style="height: 100px; width: auto;">
                 </div>
             </div>
         </div>
@@ -607,10 +610,10 @@
     </div>
 
 <script type="text/javascript">
-    /* Open when someone clicks on the span element */
 
-
-    var clientHeight = document.documentElement.clientHeight;
+    // A $( document ).ready() block.
+    $( document ).ready(function() {
+        var clientHeight = document.documentElement.clientHeight;
     var clientWidth = document.documentElement.clientWidth;
 
     var svg = d3.selectAll("#mobile-navbar")
@@ -618,450 +621,23 @@
         .attr("width", 100)
         .attr("height", 100)
         .attr("margin-left", "30px;")
+    
+    // p.content-text
+
+    var contentStr = "Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games. Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games. Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games. Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games. Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games. Champ select matters a lot. Check out our Logistic Regression tool to see just how much champ select matters in ARAM games.";
+
+    d3.selectAll("p.content-text")
+        .text(contentStr.substring(0, 430) + "... ")
+        .append("a")
+        .attr("href", "#")
+        .text("Read more");
+
+    });
+
+    
 
 
 
 </script>
 </body>
-<style>
-
-
-    @font-face {
-      font-family: radnika-regular;
-      src: url(static/radnika_font/Radnika-Regular.otf);
-    }
-
-    @font-face {
-      font-family: radnika-semibold;
-      src: url(static/radnika_font/Radnika-SemiBold.otf);
-    }
-
-    @font-face {
-      font-family: radnika-black;
-      src: url(static/radnika_font/Radnika-Black.otf);
-    }
-
-    @font-face {
-      font-family: radnika-bold-condensed;
-      src: url(static/radnika_font/Radnika-BoldCondensed.otf);
-    }
-
-    @font-face {
-      font-family: radnika-italic;
-      src: url(static/radnika_font/Radnika-Italic.otf);
-    }
-
-    @font-face {
-      font-family: radnika-bold;
-      src: url(static/radnika_font/Radnika-Bold.otf);
-    }
-
-    @font-face {
-        font-family: radnika-condensed;
-        src: url(static/radnika_font/Radnika-Condensed.otf);
-    }
-
-    @font-face {
-        font-family: radnika-medium-condensed;
-        src: url(static/radnika_font/Radnika-MediumCondensed.otf);
-    }
-
-    .footer-disclaimer {
-        font-family: radnika-condensed;
-        font-size: 10px;
-        color: #b1aabc;
-    }
-
-    .footer-disclaimer-mobile {
-        font-family: radnika-condensed;
-        font-size: 8px;
-        color: #b1aabc;
-    }
-
-    .copyright {
-        font-family: radnika-regular;
-        font-size: 12px;
-        color: #b1aabc;
-    }
-
-    .fill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden
-    }
-    
-    .fill img {
-        flex-shrink: 0;
-        min-width: 100%;
-        min-height: 100%
-    }
-    
-    .container img {
-        width: 100%;
-    }
-    
-    .bottom-left {
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-    }
-    
-    .bottom-right {
-        position: absolute;
-        bottom: 8px;
-        right: 16px;
-    }
-    
-    .top-right {
-        position: absolute;
-        top: 8px;
-        right: 16px;
-    }
-    
-    .top-left {
-        position: absolute;
-        top: 8px;
-        left: 16px;
-    }
-    
-
-    #champ1 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #champ1-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ2 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #champ2-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ3 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #champ3-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ4 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #champ4-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ5 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #champ5-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    .no-padding {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .navbar-nav > li {
-        padding-left: 18px;
-        padding-right: 18px;
-        font-family: radnika-semibold;
-        font-size: 15px;
-    }
-
-    .navbar {
-        border-bottom: 1px black solid;
-    }
-    
-    #headline-content b {
-      font-family: radnika-bold-condensed;
-      font-size: 38px;
-    }
-
-    #headline-content-mobile b {
-      font-family: radnika-bold-condensed;
-      font-size: 24px;
-      margin-left: 20px;
-    }
-
-    #secondary-headline b {
-      font-family: radnika-bold-condensed;
-      font-size: 20px;
-    }
-
-    div.content h3 {
-      font-family: radnika-bold-condensed;
-      font-size: 30px;
-    }
-
-    div.content b {
-      color: black;
-    }
-
-    div.content img {
-      width: 84%;
-      height: 100%;
-    }
-
-    div.content p.content-text {
-      font-family: radnika-regular;
-      font-size: 12px;
-      color: #b1aabc;
-    }
-
-    div.content p.author-and-date {
-      font-family: radnika-italic;
-      font-size: 8px;
-      text-align: right;
-    }
-
-    div.content p.author-and-date-mobile {
-      font-family: radnika-italic;
-      font-size: 7px;
-      text-align: right;
-    }
-
-    a.mail-to:hover {
-        color: black !important;
-    }
-    
-    div#top-champions h6 b {
-      font-family: radnika-bold-condensed;
-      font-size: 20px;
-    }
-
-    div#top-champions p#last-updated {
-      font-family: radnika-italic;
-      font-size: 9px;
-    }
-
-    div#top-champions .top-champion b {
-      font-family: radnika-bold;
-      font-size: 12px;
-    }
-    
-    div#top-champions p.winrate {
-      font-family: radnika-regular;
-      font-size: 9px;
-    }
-
-    div#top-champions p.top-champion-ordinal {
-      font-family: radnika-bold;
-      font-size: 20px;
-    }
-
-    button.recommended-matchup-button {
-        font-family: radnika-regular;
-        font-size: 8px;
-        color: #b1aabc;
-        border: 1px solid #b1aabc;
-        outline: none;
-        border-radius: 2px;
-    }
-
-    button.recommended-matchup-button-mobile {
-        font-family: radnika-regular;
-        font-size: 8px;
-        color: #b1aabc;
-        border: 1px solid #b1aabc;
-        outline: none;
-    }
-
-    button.recommended-matchup-button:active {
-        transform: translateY(2px);
-    }
-
-    #twitter-icon:hover {
-        content:url('static/mockup-assets/twitter-onHover.png');
-    }
-
-    #facebook-icon:hover {
-        content:url('static/mockup-assets/facebook-onHover.png');
-    }
-
-    .stats-headline-text-mobile b {
-        font-size: 15px;
-    }
-
-
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 2; 
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); 
-    background: linear-gradient(45deg, #ba3f5d, #496bb9);   
-    overflow-x: hidden; 
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px; 
-    margin-bottom: 20px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 20px;
-    margin-bottom: 17px;
-    color: #eaeaea;
-    font-family: radnika-regular;
-    display: block; 
-    transition: 0.3s; 
-}
-
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-
-
-.btn {
-    background: linear-gradient(90deg, #ba3f5d, #496bb9);
-    border-radius: 1px;
-    box-sizing: border-box;
-    color: black;
-    display: block;
-    font-family: radnika-regular; 
-    font-size: 6px; 
-    height: 15px;
-    letter-spacing: 0px;
-    margin: 0 auto;
-    padding: 0px;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 130px;
-    z-index: -2;
-}
-
-.btn:hover {
-    color: #fff;
-}
-
-.btn span {
-    align-items: center;
-    background: white;
-    border-radius: 1px;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    transition: background .5s ease;
-    width: 100%;
-}
-
-.btn:hover span {
-    background: transparent;
-}
-
-
-.see-recommended-matchup-text {
-    text-transform: uppercase;
-    font-size: 5px;
-    margin-top: 6px;
-    font-family: radnika-regular;
-    background: linear-gradient(45deg, #ba3f5d, #496bb9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-}
-
-.desktop-headline-text {
-    background: #f9f9f9;
-}
-
-span {
-    z-index: -3;
-}
-
-</style>
-
 </html>

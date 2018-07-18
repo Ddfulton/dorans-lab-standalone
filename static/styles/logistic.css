@@ -1,0 +1,219 @@
+@font-face {
+  font-family: radnika-regular;
+  src: url(../radnika_font/Radnika-Regular.otf);
+}
+
+@font-face {
+  font-family: radnika-semibold;
+  src: url(../radnika_font/Radnika-SemiBold.otf);
+}
+
+@font-face {
+  font-family: radnika-black;
+  src: url(../radnika_font/Radnika-Black.otf);
+}
+
+@font-face {
+  font-family: radnika-bold-condensed;
+  src: url(../radnika_font/Radnika-BoldCondensed.otf);
+}
+
+@font-face {
+  font-family: radnika-italic;
+  src: url(../radnika_font/Radnika-Italic.otf);
+}
+
+@font-face {
+  font-family: radnika-bold;
+  src: url(../radnika_font/Radnika-Bold.otf);
+}
+
+@font-face {
+    font-family: radnika-condensed;
+    src: url(../radnika_font/Radnika-Condensed.otf);
+}
+
+@font-face {
+    font-family: radnika-medium-condensed;
+    src: url(../radnika_font/Radnika-MediumCondensed.otf);
+}
+
+    @font-face {
+        font-family: radnika-medium;
+        src: url(../radnika_font/Radnika-Medium.otf);
+    }
+
+
+input.redteam {
+  background: white; 
+  font-family: monospace; 
+  padding: 10px 20px; 
+  margin: 20px 10px 20px 0;
+  border-bottom: 3px solid #d65e5e;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: #ba3f5d;
+  font-weight: bold;
+  font-family: radnika-bold;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+input.blueteam {
+  background: white; 
+  font-family: monospace; 
+  padding: 10px 20px; 
+  margin: 20px 10px 20px 0;
+  border-bottom: 3px solid #5c65d1;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: #496bb9;
+  font-weight: bold;
+  font-family: radnika-bold;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+input:focus { 
+  outline: none;}
+
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+        .chart {
+
+        }
+
+        .main text {
+            font: 10px sans-serif;  
+        }
+
+        .axis line, .axis path {
+            shape-rendering: crispEdges;
+            stroke: black;
+            fill: none;
+        }
+
+        circle {
+            fill: steelblue;
+        }
+    .navbar-nav > li {
+        padding-left: 18px;
+        padding-right: 18px;
+        font-family: radnika-semibold;
+        font-size: 15px;
+    }
+
+    .navbar {
+        border-bottom: 1px black solid;
+    }
+    
+
+    .red-team-percentage {
+      fill: #ba3f5d;
+      font-family: radnika-bold;
+      }
+
+    .red-team-percentage-sign {
+      fill: #ba3f5d;
+      font-family: radnika-bold;
+      }
+
+      .blue-team-percentage {
+      fill: #496bb9;
+      font-family: radnika-bold;
+      }
+
+    .blue-team-percentage-sign {
+      fill: #496bb9;
+      font-family: radnika-bold;
+      }
+
+      .footer-disclaimer {
+        font-family: radnika-condensed;
+        font-size: 10px;
+        color: #b1aabc;
+    }
+
+    .copyright {
+        font-family: radnika-regular;
+        font-size: 12px;
+        color: #b1aabc;
+    }
+
+    #twitter-icon:hover {
+        content:url('static/mockup-assets/twitter-onHover.png');
+    }
+
+    #facebook-icon:hover {
+        content:url('static/mockup-assets/facebook-onHover.png');
+    }
+
+    a.mail-to:hover {
+        color: black !important;
+    }
+
+    #bottomPadding  {
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 8px 6px -6px #999;
+    }
+
+    ul#red-synergies li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #ba3f5d;
+    }
+
+    ul#red-counters li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #ba3f5d;
+    }
+
+    ul#blue-synergies li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #496bb9;
+    }
+
+    ul#blue-counters li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #496bb9;
+    }
+
+    ul li p {
+      color: black;
+    }
+
+    #share-button {
+      float: right;
+      background-color: transparent;
+      font-family: radnika-semibold;
+      font-size: 12px;
+      color: gray;
+    }
+
+    #share-button:hover {
+      background-color: black;   
+    }
+
+    #share-button:focus {
+      outline: 0;
+    }

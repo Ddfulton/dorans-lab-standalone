@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
+  <link rel="stylesheet" type="text/css" href="static/styles/logistic.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -19,26 +19,29 @@
 
 <body>
   <div class="container">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top hidden-xs-down">
-                <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
-                <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-type.png" style="width: 28%; height: 35%;"></a>
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>Learn</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/tools" style="color: black"><b>Tools</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>About</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>Contact</b></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
+            <div class="d-none d-sm-block">
+                    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
+                        <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
+                        <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px;"></a>
+                        <div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color: black"><b>Learn</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/tools" style="color: black"><b>Tools</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color: black"><b>About</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color: black"><b>Contact</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+            </div>
       <div class="jumbotron text-center"  style="margin-bottom: -70px; background-color: white;">
         <h1 style="font-family: radnika-black; font-size: 40px;">[ ARAM Win Predictor ]</h1>
         <p style="font-family: radnika-medium">Using logistic regression, calculate the likelihood of a team winning based on champions picked.</p>
@@ -54,9 +57,9 @@
       <div class="col-lg-4">
           <div class="panel panel-default">
               <div class="panel-body">
-                <p style="font-family: radnika-bold-condensed; font-size: 30px;">Champion Select</p>
+                <p style="font-family: radnika-bold-condensed; font-size: 30px; margin-bottom: -4px; text-align: center;">Champion Select</p>
                   <div class="row">
-                    <p>Type to manually select champions or click to randomize!</p><br/>
+                    <p style="text-align: center;">Type to manually select champions or click to randomize!</p><br/>
                   </div>
 
                   <div class="row">
@@ -64,14 +67,14 @@
                       <tr>
                         <div class="row">
                           <div class="col-md-6">
-                            <td><a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #ba3f5d; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 10px;">Red Team</b></br></h3></a>
-                              <a onclick="randomizeRedTeam();"><img class="img-fluid" src="static/mockup-assets/shuffle-circle-red.png" style="float: right; margin-top: -32px; margin-right: 20px; height: 30px;"></a>
+                            <td style="background-color: #ba3f5d;"><a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #ba3f5d; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 10px;">Red Team</b></br></h3></a>
+                              <a onclick="randomizeRedTeam();"><img class="img-fluid" src="static/mockup-assets/shuffle-circle-red.png" style="float: right; margin-top: -35px; margin-right: 20px; height: 30px; background: black; border-radius: 16px; cursor: pointer;"></a>
                             </td>
                           </div>
                           <div class="col-md-6">
 
-                            <td><a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #496bb9; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 10px;">Blue Team</b></br></h3></a>
-                              <a onclick="randomizeBlueTeam();"><img class="img-fluid" src="static/mockup-assets/shuffle-circle-blue.png" style="float: right; margin-top: -32px; margin-right: 20px; height: 30px;"></a>
+                            <td style="background-color: #496bb9;"><a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #496bb9; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 10px;">Blue Team</b></br></h3></a>
+                              <a onclick="randomizeBlueTeam();"><img class="img-fluid" src="static/mockup-assets/shuffle-circle-blue.png" style="float: right; margin-top: -35px; margin-right: 20px; height: 30px; background: black; border-radius: 16px; cursor: pointer;"></a>
                             </td>
 
                           </div>
@@ -101,9 +104,8 @@
                         <td><input type="text" class="awesomecomplete redteam"  value="Cho'Gath"></td>
                         <td><input type="text" class="awesomecomplete blueteam"  value="Blitzcrank"></td>
                       </tr>
-                    </table>
 
-                    <table id="synergies">
+
                       <tr>
                         <td><p style="font-family: radnika-bold-condensed; font-size: 15px;">Synergies</p></td>
                         <td></td>
@@ -898,236 +900,8 @@ function calculateSynergiesAndCounters() {
 
 </script>
 
-      </body>
+</body>
 
 
-      <style>
-
-      @font-face {
-      font-family: radnika-regular;
-      src: url(static/radnika_font/Radnika-Regular.otf);
-    }
-
-    @font-face {
-      font-family: radnika-semibold;
-      src: url(static/radnika_font/Radnika-SemiBold.otf);
-    }
-
-    @font-face {
-      font-family: radnika-black;
-      src: url(static/radnika_font/Radnika-Black.otf);
-    }
-
-    @font-face {
-      font-family: radnika-bold-condensed;
-      src: url(static/radnika_font/Radnika-BoldCondensed.otf);
-    }
-
-    @font-face {
-      font-family: radnika-italic;
-      src: url(static/radnika_font/Radnika-Italic.otf);
-    }
-
-    @font-face {
-      font-family: radnika-bold;
-      src: url(static/radnika_font/Radnika-Bold.otf);
-    }
-
-    @font-face {
-        font-family: radnika-condensed;
-        src: url(static/radnika_font/Radnika-Condensed.otf);
-    }
-
-    @font-face {
-        font-family: radnika-medium-condensed;
-        src: url(static/radnika_font/Radnika-MediumCondensed.otf);
-    }
-
-    @font-face {
-        font-family: radnika-medium;
-        src: url(static/radnika_font/Radnika-Medium.otf);
-    }
-
-input.redteam {
-  background: white; 
-  font-family: monospace; 
-  padding: 10px 20px; 
-  font-size: 18px; 
-  margin: 20px 10px 20px 0;
-  border-bottom: 3px solid #d65e5e;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  color: #ba3f5d;
-  font-weight: bold;
-  font-family: radnika-bold;
-  font-size: 12px;
-  background-color: transparent;
-}
-
-input.blueteam {
-  background: white; 
-  font-family: monospace; 
-  padding: 10px 20px; 
-  font-size: 18px; 
-  margin: 20px 10px 20px 0;
-  border-bottom: 3px solid #5c65d1;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  color: #496bb9;
-  font-weight: bold;
-  font-family: radnika-bold;
-  font-size: 12px;
-  background-color: transparent;
-}
-
-input:focus { 
-  outline: none;}
-
-
-.line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 2px;
-}
-
-.grid line {
-  stroke: lightgrey;
-  stroke-opacity: 0.7;
-  shape-rendering: crispEdges;
-}
-
-.grid path {
-  stroke-width: 0;
-}
-        .chart {
-
-        }
-
-        .main text {
-            font: 10px sans-serif;  
-        }
-
-        .axis line, .axis path {
-            shape-rendering: crispEdges;
-            stroke: black;
-            fill: none;
-        }
-
-        circle {
-            fill: steelblue;
-        }
-    .navbar-nav > li {
-        padding-left: 18px;
-        padding-right: 18px;
-        font-family: radnika-semibold;
-        font-size: 15px;
-    }
-
-    .navbar {
-        -webkit-box-shadow: 0 8px 6px -6px #999;
-        -moz-box-shadow: 0 8px 6px -6px #999;
-        box-shadow: 0 8px 6px -6px #999;
-    }
-    
-
-    .red-team-percentage {
-      fill: #ba3f5d;
-      font-family: radnika-bold;
-      }
-
-    .red-team-percentage-sign {
-      fill: #ba3f5d;
-      font-family: radnika-bold;
-      }
-
-      .blue-team-percentage {
-      fill: #496bb9;
-      font-family: radnika-bold;
-      }
-
-    .blue-team-percentage-sign {
-      fill: #496bb9;
-      font-family: radnika-bold;
-      }
-
-      .footer-disclaimer {
-        font-family: radnika-condensed;
-        font-size: 10px;
-        color: #b1aabc;
-    }
-
-    .copyright {
-        font-family: radnika-regular;
-        font-size: 12px;
-        color: #b1aabc;
-    }
-
-    #twitter-icon:hover {
-        content:url('static/mockup-assets/twitter-onHover.png');
-    }
-
-    #facebook-icon:hover {
-        content:url('static/mockup-assets/facebook-onHover.png');
-    }
-
-    a.mail-to:hover {
-        color: black !important;
-    }
-
-    #bottomPadding  {
-        -webkit-box-shadow: 0 8px 6px -6px #999;
-        -moz-box-shadow: 0 8px 6px -6px #999;
-        box-shadow: 0 8px 6px -6px #999;
-    }
-
-    ul#red-synergies li {
-      font-family: radnika-condensed;
-      font-size: 15px; 
-      color: #ba3f5d;
-    }
-
-    ul#red-counters li {
-      font-family: radnika-condensed;
-      font-size: 15px; 
-      color: #ba3f5d;
-    }
-
-    ul#blue-synergies li {
-      font-family: radnika-condensed;
-      font-size: 15px; 
-      color: #496bb9;
-    }
-
-    ul#blue-counters li {
-      font-family: radnika-condensed;
-      font-size: 15px; 
-      color: #496bb9;
-    }
-
-    ul li p {
-      color: black;
-    }
-
-    #share-button {
-      float: right;
-      background-color: transparent;
-      font-family: radnika-semibold;
-      font-size: 12px;
-      color: gray;
-    }
-
-    #share-button:hover {
-      background-color: black;   
-    }
-
-    #share-button:focus {
-      outline: 0;
-    }
-
-
-
-
-  </style>
+      
     </html>
