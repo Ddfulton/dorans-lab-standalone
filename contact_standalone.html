@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Doran's Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/contact.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </script>
+    <script type="text/javascript" src="static/disablescroll.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+</head>
+
+<!-- <body style="background-image: url(https://saltykai.com/wp-content/uploads/2016/09/watercolor-1.jpg); font-family: Montserrat;"> -->
+<body style="background-color: #F8F8F8">
+    <div class="container" id="main">
+        <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
+        <div class="d-none d-sm-block">
+                <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
+                    <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
+                    <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -7px;"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px; "></a>
+                    <div>
+                        <ul class="navbar-nav" style="margin-bottom: -10px; margin-top: -10px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: black"><b>Learn</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/tools" style="color: black"><b>Tools</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: black"><b>About</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: black"><b>Contact</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+
+
+        <br><br><br>
+
+
+        <div class="row">
+            <div class="col-8">
+                <h1>Get in Touch!</h1>
+                <h4 style="font-family: radnika-semibold; margin-top: 15px">Got suggestions, critiques—the whole shebang? We'd love to hear<br/> from you!</h4>
+            </div>
+        </div>
+
+
+        <br><br><br><br>
+
+
+        <div class="row">
+            
+            <div class="col-7" id="contact-details"> 
+                <div class="row">
+                    <div class="col-4">
+                        <h4 id="email-text">Email</h4>
+                        <p id="email-address"><a href="mailto:LaberLabsLol@gmail.com" id="contact-email-first">LaberLabsLol@gmail.com</a></p>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-4">
+                        <h4 id="email-text">Social Media</h4>
+                        <div class="row" id="facebook-and-twitter">
+                            <div class="col-3" id="facebook-row">
+                                <a href="https://twitter.com/laberlabs?lang=en"><img src="static/mockup-assets/facebook-passive.png" id="facebook-icon"></a>
+                            </div>
+                            <div class="col-4">
+                                <h6 class="facebook-or-twitter-text">Facebook</h6>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="https://twitter.com/laberlabs?lang=en"><img src="static/mockup-assets/twitter-passive.png" id="twitter-icon"></a>
+                            </div>
+                            <div class="col-4">
+                                <h6 class="facebook-or-twitter-text">Twitter</h6>
+                            </div>
+                        </div>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-5">
+                <a class="twitter-timeline" href="https://twitter.com/LaberLabs?ref_src=twsrc%5Etfw" data-tweet-limit="2" data-chrome="noheader nofooter">Tweets by LaberLabs</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+        </div>
+    
+        <br><br><br><br><br><br>    
+    <div class="row" id="bottomPadding" style="border-bottom: 1px solid;">
+        <br>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div class="d-none d-sm-block">
+            <div class="row" id="footer">
+                <div class="col-md-5" style="margin-top: 10px;">
+                    <p class="footer-disclaimer">Doran's Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends or Riot Games are trademarks or registered trademarks of Riot Games, Inc. Copyright Riot Games, Inc.</p>
+                    
+                    <p class="copyright">Copyright 2018 <u><a href="http://www.laber-labs.com/">Laber Labs</a></u></p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img id="facebook-icon" src="static/mockup-assets/facebook-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;">
+                    <a href="https://twitter.com/laberlabs?lang=en"><img id="twitter-icon" src="static/mockup-assets/twitter-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;"></a>
+                    <br/><br/>
+                    <p style="font-family: radnika-bold-condensed; font-size: 12px; text-align: right; color: #b1aabc;">Contact Us</p>
+                    <p class="mail-to" style="font-family: radnika-medium-condensed; font-size: 12px; text-align: right;"><u><a style="color: #b1aabc; margin-top: 50px;" class="mail-to" href="mailto:LaberLabsLol@gmail.com">LaberLabsLol@gmail.com</a></u></p>
+                </div>
+                <div class="col-md-1">
+                    <img class="img-fluid" src="static/Sm-dorans-lab-icon.png" style="height: 70px; width: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
