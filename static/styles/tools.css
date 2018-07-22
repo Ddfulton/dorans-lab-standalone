@@ -18,14 +18,17 @@
 .tool h3 {
     font-family: radnika-black; 
     text-align: left; 
-    font-size: 30px;
+    font-size: 24px;
 } 
 
 .tool .tool-synopsis {
-    font-family: radnika-medium-condensed;
+    font-family: radnika-condensed;
+    font-size: 12px;
+
 }
 
 .tool .last-updated {
     color: gray; 
-    font-family: radnika-regular;
+    font-family: radnika-condensed;
+    font-size: 12px;
 }

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Doran's Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/radnika.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/about.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </script>
+    <script type="text/javascript" src="static/disablescroll.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+</head>
+
+<!-- <body style="background-image: url(https://saltykai.com/wp-content/uploads/2016/09/watercolor-1.jpg); font-family: Montserrat;"> -->
+<body style="background-color: #F8F8F8">
+<div class="container">
+    <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
+    <div class="d-none d-sm-block">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
+                <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
+                <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -7px;"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px; "></a>
+                <div>
+                    <ul class="navbar-nav" style="margin-bottom: -10px; margin-top: -10px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black"><b>Learn</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tools" style="color: black"><b>Tools</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black"><b>About</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black"><b>Contact</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-8">
+            <h1>Our Mission</h1>
+            <h4>To expose millions of LoL players to statistics concepts by showing how data can be used to answer questions about the game. We are doing this in the form of an awesome online experience that includes articles, graphics, and interactive elements.</h4>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <br><br>
+    <div class="row">
+        <div class="col-8">
+            <h1>Meet the Team</h1>
+            <h4>We are a team of passionate NCSU undergraduates and mentors working together to analyze League of Legends data in totally new ways!</h4>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <br><br>
+    <div class="row"> 
+        <div class="col-8">
+            <div class="row" id="analysts">
+                <div class="col-12">
+                    <h4 id="email-text">Analysts</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p class="analyst">Lisa Wong</p>
+                    <p class="analyst-description">Lulu Enthusiast</p>
+                </div>
+                <div class="col-3">
+                    <p class="analyst">Lisa Wong</p>
+                    <p class="analyst-description">Lulu Enthusiast</p>
+                </div>
+                <div class="col-3">
+                    <p class="analyst">Lisa Wong</p>
+                    <p class="analyst-description">Lulu Enthusiast</p>
+                </div>
+                <div class="col-3">
+                    <p class="analyst">Lisa Wong</p>
+                    <p class="analyst-description">Lulu Enthusiast</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p class="analyst">Lisa Wong</p>
+                    <p class="analyst-description">Lulu Enthusiast</p>
+                </div>
+                <div class="col-3">
+                    <p class="analyst">Lisa Wong</p>
+                    <p class="analyst-description">Lulu Enthusiast</p>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>  
+
+            
+
+
+
+
+
+            <br><br>
+        
+            <div class="row" id="current-students"> 
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 id="email-text">Current Students</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="current-student">Lisa Wong</p>
+                            <p class="current-student">Alex Cloud</p>
+                            <p class="current-student">Derek "Web God" Fulton</p>
+                            <p class="current-student">Matthew Singer</p>
+                            <p class="current-student">Adam "PartySquid" Durrett</p>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row" id="alumni"> 
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 id="email-text">Alumni</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="alumnus">Lisa Wong</p>
+                            <p class="alumnus">Alex Cloud</p>
+                            <p class="alumnus">Derek Fulton</p>
+                            <p class="alumnus">Matthew Singer</p>
+                            <p class="alumnus">Adam "PartySquid" Durrett</p>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3" style="margin-left: 20px; padding-left: 45px;border-left: 2px dashed grey;">
+            <br>
+            <img src="static/mockup-assets/dr-laber-headshot.png" style="border-radius: 5px;">
+            <p style="font-family: radnika-bold-condensed; font-size: 20px; text-align: center; margin-top: 10px;">Dr. Eric Laber</p>
+            <p style="font-family: radnika-medium-condensed; font-size: 16px; text-align: center; margin-top: -22px; color: #4576cc;">Super Important Title</p>
+            <p style="font-family: radnika-condensed; font-size: 12px; text-align: center; margin-top: -18px;">Associate Professor of Statistics and Faculty Scholar at North Carolina State University</p>
+
+            <br><br>
+            <img src="static/mockup-assets/dr-laber-headshot.png" style="border-radius: 5px;">
+            <p style="font-family: radnika-bold-condensed; font-size: 20px; text-align: center; margin-top: 10px;">Dr. Eric Laber</p>
+            <p style="font-family: radnika-medium-condensed; font-size: 16px; text-align: center; margin-top: -22px; color: #4576cc;">Super Important Title</p>
+            <p style="font-family: radnika-condensed; font-size: 12px; text-align: center; margin-top: -18px;">Associate Professor of Statistics and Faculty Scholar at North Carolina State University</p>
+
+            <br><br>
+        </div>
+
+        <div class="col-1"></div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

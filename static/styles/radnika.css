@@ -44,3 +44,8 @@
     font-family: radnika-medium;
     src: url(../radnika_font/Radnika-Medium.otf);
 }
+
+@font-face {
+    font-family: radnika-medium-italic;
+    src: url(../radnika_font/Radnika-MediumItalic.otf);
+}

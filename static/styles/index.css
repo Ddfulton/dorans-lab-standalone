@@ -440,6 +440,8 @@
     background: #f9f9f9;
     opacity: .75;
     cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 .mobile-content-headline-text {
