@@ -123,6 +123,12 @@ input:focus {
         border-bottom: 1px black solid;
     }
     
+    .navbar-logo {
+        width: 20%; 
+        height: auto; 
+        min-width: 210px;
+        max-width: 100%;
+    }
 
     .red-team-percentage {
       fill: #ba3f5d;

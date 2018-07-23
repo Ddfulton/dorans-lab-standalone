@@ -5,7 +5,7 @@
         }
 
 .tool {
-    border-bottom: dashed 2px gray; 
+    border-bottom: dashed .5px black; 
     padding: 25px;
 }
 

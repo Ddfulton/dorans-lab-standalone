@@ -1,333 +1,377 @@
+/* Font */
+@font-face {
+  font-family: radnika-regular;
+  src: url(../radnika_font/Radnika-Regular.otf);
+}
 
+@font-face {
+  font-family: radnika-semibold;
+  src: url(../radnika_font/Radnika-SemiBold.otf);
+}
 
-    @font-face {
-      font-family: radnika-regular;
-      src: url(../radnika_font/Radnika-Regular.otf);
-    }
+@font-face {
+  font-family: radnika-black;
+  src: url(../radnika_font/Radnika-Black.otf);
+}
 
-    @font-face {
-      font-family: radnika-semibold;
-      src: url(../radnika_font/Radnika-SemiBold.otf);
-    }
+@font-face {
+  font-family: radnika-bold-condensed;
+  src: url(../radnika_font/Radnika-BoldCondensed.otf);
+}
 
-    @font-face {
-      font-family: radnika-black;
-      src: url(../radnika_font/Radnika-Black.otf);
-    }
+@font-face {
+  font-family: radnika-italic;
+  src: url(../radnika_font/Radnika-Italic.otf);
+}
 
-    @font-face {
-      font-family: radnika-bold-condensed;
-      src: url(../radnika_font/Radnika-BoldCondensed.otf);
-    }
+@font-face {
+  font-family: radnika-bold;
+  src: url(../radnika_font/Radnika-Bold.otf);
+}
 
-    @font-face {
-      font-family: radnika-italic;
-      src: url(../radnika_font/Radnika-Italic.otf);
-    }
+@font-face {
+    font-family: radnika-condensed;
+    src: url(../radnika_font/Radnika-Condensed.otf);
+}
 
-    @font-face {
-      font-family: radnika-bold;
-      src: url(../radnika_font/Radnika-Bold.otf);
-    }
+@font-face {
+    font-family: radnika-medium-condensed;
+    src: url(../radnika_font/Radnika-MediumCondensed.otf);
+}
 
-    @font-face {
-        font-family: radnika-condensed;
-        src: url(../radnika_font/Radnika-Condensed.otf);
-    }
+@font-face {
+    font-family: radnika-medium;
+    src: url(../radnika_font/Radnika-Medium.otf);
+}
 
-    @font-face {
-        font-family: radnika-medium-condensed;
-        src: url(../radnika_font/Radnika-MediumCondensed.otf);
-    }
+/* General */
 
-    @font-face {
-        font-family: radnika-medium;
-        src: url(../radnika_font/Radnika-Medium.otf);
-    }
+body {
+    background-color: #F8F8F8;
+}
 
-    .footer-disclaimer {
-        font-family: radnika-condensed;
-        font-size: 10px;
-        color: #b1aabc;
-    }
+.archive-container {
+    margin-top: 20px;
+}
 
-    .footer-disclaimer-mobile {
-        font-family: radnika-condensed;
-        font-size: 8px;
-        color: #b1aabc;
-    }
+.archive-header {
+    text-align: center;
+    font-family: radnika-black;
+    font-size: 40px;
+}
 
-    .copyright {
-        font-family: radnika-regular;
-        font-size: 12px;
-        color: #b1aabc;
-    }
+.archive-info {
+    text-align: center;
+    font-family: radnika-medium;
+    font-size: 18px;
+}
 
-    .fill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden
-    }
-    
-    .fill img {
-        flex-shrink: 0;
-        min-width: 100%;
-        min-height: 100%
-    }
-    
-    .container img {
-        width: 100%;
-    }
-    
-    .bottom-left {
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-    }
-    
-    .bottom-right {
-        position: absolute;
-        bottom: 8px;
-        right: 16px;
-    }
-    
-    .top-right {
-        position: absolute;
-        top: 8px;
-        right: 16px;
-    }
-    
-    .top-left {
-        position: absolute;
-        top: 8px;
-        left: 16px;
-    }
-    
+.archive-blurb {
+    margin-left: -38px;
+    margin-top: 10px;
+}
 
-    #champ1 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
-        background-position: center;
-        background-size: cover;
-    }
+.footer-disclaimer {
+    font-family: radnika-condensed;
+    font-size: 10px;
+    color: #b1aabc;
+}
 
-    #champ1-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ2 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
-        background-position: center;
-        background-size: cover;
-    }
+.footer-disclaimer-mobile {
+    font-family: radnika-condensed;
+    font-size: 8px;
+    color: #b1aabc;
+}
 
-    #champ2-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ3 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
-        background-position: center;
-        background-size: cover;
-    }
+.copyright {
+    font-family: radnika-regular;
+    font-size: 12px;
+    color: #b1aabc;
+}
 
-    #champ3-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ4 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
-        background-position: center;
-        background-size: cover;
-    }
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
 
-    #champ4-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    #champ5 {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
-        background-position: center;
-        background-size: cover;
-    }
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
 
-    #champ5-mobile {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 20px;
-    }
-    
-    .no-padding {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .navbar-nav > li {
-        padding-left: 18px;
-        padding-right: 18px;
-        font-family: radnika-semibold;
-        font-size: 15px;
-    }
+.container img {
+    width: 100%;
+}
 
+<<<<<<< HEAD
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+=======
     .navbar {
         border-bottom: 1px black solid;
+    }
+
+    .navbar-logo {
+        width: 20%; 
+        height: auto; 
+        min-width: 210px;
+        max-width: 100%;
     }
     
     #headline-content b {
       font-family: radnika-bold-condensed;
       font-size: 38px;
     }
+>>>>>>> 736826da5975ec3e3442c0613a40eb20aa1bca4d
 
-    #headline-content-mobile b {
-      font-family: radnika-bold-condensed;
-      font-size: 24px;
-      margin-left: 20px;
-    }
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
 
-    #secondary-headline b {
-      font-family: radnika-bold-condensed;
-      font-size: 20px;
-    }
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
 
-    div.content h3 {
-      font-family: radnika-bold-condensed;
-      font-size: 30px;
-    }
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
 
-    div.content b {
-      color: black;
-    }
 
-    div.content img {
-      width: 84%;
-      height: 100%;
-    }
+#champ1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
+    background-position: center;
+    background-size: cover;
+}
 
-    div.content p.content-text {
-      font-family: radnika-regular;
-      font-size: 12px;
-      color: #b1aabc;
-    }
+#champ1-mobile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Aatrox.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
 
-    div.content p.author-and-date {
-      font-family: radnika-italic;
-      font-size: 8px;
-      text-align: right;
-    }
+#champ2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
+    background-position: center;
+    background-size: cover;
+}
 
-    div.content p.author-and-date-mobile {
-      font-family: radnika-italic;
-      font-size: 7px;
-      text-align: right;
-    }
+#champ2-mobile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Ashe.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
 
-    a.mail-to:hover {
-        color: black !important;
-    }
-    
-    div#top-champions h6 b {
-      font-family: radnika-bold-condensed;
-      font-size: 20px;
-    }
+#champ3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
+    background-position: center;
+    background-size: cover;
+}
 
-    div#top-champions p#last-updated {
-      font-family: radnika-italic;
-      font-size: 9px;
-    }
+#champ3-mobile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Annie.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
 
-    div#top-champions .top-champion b {
-      font-family: radnika-bold;
-      font-size: 12px;
-    }
-    
-    div#top-champions p.winrate {
-      font-family: radnika-regular;
-      font-size: 9px;
-    }
+#champ4 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
+    background-position: center;
+    background-size: cover;
+}
 
-    div#top-champions p.top-champion-ordinal {
-      font-family: radnika-bold;
-      font-size: 20px;
-    }
+#champ4-mobile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Anivia.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
 
-    button.recommended-matchup-button {
-        font-family: radnika-regular;
-        font-size: 8px;
-        color: #b1aabc;
-        border: 1px solid #b1aabc;
-        outline: none;
-        border-radius: 2px;
-        cursor: pointer;
-    }
+#champ5 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
+    background-position: center;
+    background-size: cover;
+}
 
-    button.recommended-matchup-button-mobile {
-        font-family: radnika-regular;
-        font-size: 8px;
-        color: #b1aabc;
-        border: 1px solid #b1aabc;
-        outline: none;
-    }
+#champ5-mobile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/Vladimir.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
 
-    button.recommended-matchup-button:active {
-        transform: translateY(2px);
-    }
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
 
-    #twitter-icon:hover {
-        content:url('../mockup-assets/twitter-onHover.png');
-        cursor: pointer;
-    }
+.navbar-nav > li {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: radnika-semibold;
+    font-size: 15px;
+}
 
-    #facebook-icon:hover {
-        content:url('../mockup-assets/facebook-onHover.png');
-        cursor: pointer;
-    }
+.navbar {
+    border-bottom: 1px black solid;
+}
 
-    .stats-headline-text-mobile b {
-        font-size: 15px;
-    }
+#headline-content b {
+  font-family: radnika-bold-condensed;
+  font-size: 38px;
+}
+
+#headline-content-mobile b {
+  font-family: radnika-bold-condensed;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+#secondary-headline b {
+  font-family: radnika-bold-condensed;
+  font-size: 20px;
+}
+
+div.content h3 {
+  font-family: radnika-bold-condensed;
+  font-size: 30px;
+}
+
+div.content b {
+  color: black;
+}
+
+div.content img {
+  width: 84%;
+  height: 100%;
+}
+
+div.content p.content-text {
+  font-family: radnika-regular;
+  font-size: 12px;
+  color: #b1aabc;
+}
+
+div.content p.author-and-date {
+  font-family: radnika-italic;
+  font-size: 8px;
+  text-align: right;
+}
+
+div.content p.author-and-date-mobile {
+  font-family: radnika-italic;
+  font-size: 7px;
+  text-align: right;
+}
+
+a.mail-to:hover {
+    color: black !important;
+}
+
+div#top-champions h6 b {
+  font-family: radnika-bold-condensed;
+  font-size: 20px;
+}
+
+div#top-champions p#last-updated {
+  font-family: radnika-italic;
+  font-size: 9px;
+}
+
+div#top-champions .top-champion b {
+  font-family: radnika-bold;
+  font-size: 12px;
+}
+
+div#top-champions p.winrate {
+  font-family: radnika-regular;
+  font-size: 9px;
+}
+
+div#top-champions p.top-champion-ordinal {
+  font-family: radnika-bold;
+  font-size: 20px;
+}
+
+button.recommended-matchup-button {
+    font-family: radnika-regular;
+    font-size: 8px;
+    color: #b1aabc;
+    border: 1px solid #b1aabc;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button.recommended-matchup-button-mobile {
+    font-family: radnika-regular;
+    font-size: 8px;
+    color: #b1aabc;
+    border: 1px solid #b1aabc;
+    outline: none;
+}
+
+button.recommended-matchup-button:active {
+    transform: translateY(2px);
+}
+
+#twitter-icon:hover {
+    content:url('../mockup-assets/twitter-onHover.png');
+    cursor: pointer;
+}
+
+#facebook-icon:hover {
+    content:url('../mockup-assets/facebook-onHover.png');
+    cursor: pointer;
+}
+
+.stats-headline-text-mobile b {
+    font-size: 15px;
+}
 
 
 .overlay {
@@ -483,4 +527,362 @@ img#hamburger-img:focus {
 
 body {
     padding-bottom: 20px;
+}
+
+/* About */
+.analyst {
+    font-family: radnika-medium-condensed; 
+    font-size: 15px;
+}
+
+.analyst-description {
+    font-family: radnika-medium-condensed; 
+    font-size: 12px; 
+    margin-top: -17px; 
+    color: grey;
+}
+
+.current-student {
+    margin-bottom: -2px; 
+    font-family: radnika-condensed; 
+    font-size: 15px;
+}
+
+.alumnus {
+    margin-bottom: -2px; 
+    font-family: radnika-condensed; 
+    font-size: 15px;
+}
+
+#analysts {
+    font-size: 20px;
+}
+
+/* Article */
+.article-archive-thumbnail {
+    width: 100%; 
+    height: auto; 
+    margin-left: -38px;
+}
+
+.article-archive-header {
+    font-size: 24px;
+    font-family: radnika-bold-condensed;
+}
+
+.banner-and-title {
+    height: 350px;
+    background:transparent url('../mockup-assets/brand.jpg') no-repeat center center;
+}
+
+.article-sidebar-teaser-text {
+    background: #F8F8F8;
+    opacity: .75;
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 12px;
+    font-family: radnika-medium-condensed;
+}
+
+.dot1 {
+  height: 25px;
+  width: 25px;
+  background-color: #2376ff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.dot2 {
+  height: 25px;
+  width: 25px;
+  background-color: #88b4fc;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+.author-box {
+
+}
+
+.meet-rest-of-team {
+  color: grey;
+
+}
+
+.meet-rest-of-team:hover {
+  color: #84b2ff;
+  text-decoration: none;
+}
+
+/* Contact */
+h1 {
+    font-family: radnika-black;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: radnika-bold;
+    font-size: 18px;
+}
+
+h6 {
+    font-family: radnika-semibold;
+}
+
+#email-text {
+    border-bottom: 2px solid grey;
+    font-size: 20px;
+
+}
+
+#email-address {
+    margin-top: -5px;
+    font-family: radnika-medium-condensed;
+    font-size: 20px;
+}
+
+#contact-details {
+    border-right: 2px dashed grey;  
+}
+
+.twitter-timeline {
+    padding: 30px !important;
+    margin-top: -30px !important;
+}
+
+#contact-email-first {
+    color: black;
+    font-family: radnika-semibold;
+}
+
+#contact-email-first:hover {
+    color: #93bcff;
+    text-decoration: none;
+}
+
+#facebook-and-twitter {
+    margin-top: 15px;
+    font-family: radnika-medium-condensed;
+    font-size: 20px;
+}
+
+#facebook-row {
+    margin-bottom: 10px;
+}
+
+.facebook-or-twitter-text {
+    margin-left: -15px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+/* Logistic */
+input.redteam {
+  background: white; 
+  font-family: monospace; 
+  padding: 10px 20px; 
+  margin: 20px 10px 20px 0;
+  border-bottom: 3px solid #d65e5e;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: #ba3f5d;
+  font-weight: bold;
+  font-family: radnika-bold;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+input.blueteam {
+  background: white; 
+  font-family: monospace; 
+  padding: 10px 20px; 
+  margin: 20px 10px 20px 0;
+  border-bottom: 3px solid #5c65d1;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: #496bb9;
+  font-weight: bold;
+  font-family: radnika-bold;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+input:focus { 
+  outline: none;}
+
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+        .chart {
+
+        }
+
+        .main text {
+            font: 10px sans-serif;  
+        }
+
+        .axis line, .axis path {
+            shape-rendering: crispEdges;
+            stroke: black;
+            fill: none;
+        }
+
+        circle {
+            fill: steelblue;
+        }
+    .navbar-nav > li {
+        padding-left: 18px;
+        padding-right: 18px;
+        font-family: radnika-semibold;
+        font-size: 15px;
+    }
+
+    .navbar {
+        border-bottom: 1px black solid;
+    }
+    
+
+    .red-team-percentage {
+      fill: #ba3f5d;
+      font-family: radnika-bold;
+      }
+
+    .red-team-percentage-sign {
+      fill: #ba3f5d;
+      font-family: radnika-bold;
+      }
+
+      .blue-team-percentage {
+      fill: #496bb9;
+      font-family: radnika-bold;
+      }
+
+    .blue-team-percentage-sign {
+      fill: #496bb9;
+      font-family: radnika-bold;
+      }
+
+      .footer-disclaimer {
+        font-family: radnika-condensed;
+        font-size: 10px;
+        color: #b1aabc;
+    }
+
+    .copyright {
+        font-family: radnika-regular;
+        font-size: 12px;
+        color: #b1aabc;
+    }
+
+    #twitter-icon:hover {
+        content:url('static/mockup-assets/twitter-onHover.png');
+    }
+
+    #facebook-icon:hover {
+        content:url('static/mockup-assets/facebook-onHover.png');
+    }
+
+    a.mail-to:hover {
+        color: black !important;
+    }
+
+    ul#red-synergies li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #ba3f5d;
+    }
+
+    ul#red-counters li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #ba3f5d;
+    }
+
+    ul#blue-synergies li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #496bb9;
+    }
+
+    ul#blue-counters li {
+      font-family: radnika-condensed;
+      font-size: 15px; 
+      color: #496bb9;
+    }
+
+    ul li p {
+      color: black;
+    }
+
+    #share-button {
+      float: right;
+      background-color: transparent;
+      font-family: radnika-semibold;
+      font-size: 12px;
+      color: gray;
+    }
+
+    #share-button:hover {
+      background-color: black;   
+    }
+
+    #share-button:focus {
+      outline: 0;
+    }
+
+/* Tools */
+.tool-thumbnail {
+    width: 100%; 
+    height: auto; 
+    margin-left: -38px;
+
+    -webkit-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.3);
+}
+
+.tool {
+    border-bottom: dashed .5px black; 
+    padding: 25px;
+}
+
+.tool-header {
+    font-family: radnika-black; 
+    text-align: left; 
+    font-size: 24px;
+    margin-bottom: 5px;
+} 
+
+.tool-synopsis {
+    font-family: radnika-condensed;
+    font-size: 12px;
+
+}
+
+.last-updated {
+    color: #B1AABC; 
+    font-family: radnika-condensed;
+    font-size: 12px;
 }

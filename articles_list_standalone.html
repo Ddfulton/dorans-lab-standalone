@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-
     <title>Doran's Lab</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/styles/index.css">
+<<<<<<< HEAD
+=======
     <link rel="stylesheet" type="text/css" href="static/styles/radnika.css">
     <link rel="stylesheet" type="text/css" href="static/styles/tools.css">
+    <script type="text/javascript" src="static/js/mobile_navbar.js"></script>
+>>>>>>> 736826da5975ec3e3442c0613a40eb20aa1bca4d
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
@@ -22,9 +25,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 </head>
 
-<!-- <body style="background-image: url(https://saltykai.com/wp-content/uploads/2016/09/watercolor-1.jpg); font-family: Montserrat;"> -->
-<body style="background-color: #F8F8F8">
+<body>
 <div class="container">
+    
+
     <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
     <div class="d-none d-sm-block">
             <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
@@ -48,63 +52,87 @@
                 </div>
             </nav>
     </div>
+
+<<<<<<< HEAD
+    <br><br>
+
+=======
+    <!-- VISIBLE ONLY ON MOBILE: THIS IS THE MOBILE NAVBAR -->
+            <div class="d-sm-none">
+                <div id="myNav" class="overlay">
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href="#">Learn</a>
+                <a href="#">Tools</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+
+            </div>
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+
+                    <button onclick="openNav()" class="top-right" id="hamburger" type="button">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img src="static/hamburger.png" id="hamburger-img" style="width: 20px; height: auto; margin-top: -12px; margin-right: -10px;">
+                  </button>
+                    <a class="navbar-brand" href="#" style="margin-bottom: -10px; margin-top: -10px;"><img src="static/dorans-lab-logo-type.png" style="width: 40%; height: 35%; min-width: 100px;"></a>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="background: linear-gradient(45deg, #ba3f5d, #496bb9); margin-left: -20px; margin-right: -20px;">
+                    </div>
+                  </nav>
+            </div>
+
+
     <br><br><br>
+>>>>>>> 736826da5975ec3e3442c0613a40eb20aa1bca4d
     <div class="row">
-        <div class="col-12">
-            <h1 style="text-align: center; font-family: radnika-black; font-size: 40px;">Read All About It</h1>
-            <h6 style="text-align: center; font-family: radnika-black; font-size: 18px;">Dive into our process, take a peak behind-the-scenes, and all that good stuff</h6>
+        <div div class="col-lg-12 col-md-12 col-sm-12 archive-container">
+            <h1 class="archive-header">Read All About It</h1>
+            <h6 class="archive-info">Dive into our process, take a peak behind-the-scenes, and all that good stuff</h6>
         </div>
     </div>
+
     <br><br>
+
     <div class="row">
-        <div class="col-9">
+        <div class="col-lg-9 col-md-12 col-sm-12">
             <div class="tools-list">
-                
-
-
-                <div class="row tool" id="tool1">
-                    <div class="col-4">
-                        <img src="static/mockup-assets/lulu-figure-blur.png" class="tool-thumbnail">
+                <div class="row tool">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="static/mockup-assets/lulu-figure-blur.png" class="article-archive-thumbnail">
                     </div>
-
-                    <div class="col-7" style="margin-left: -38px;">
-                        <h3 style="font-size: 24px; font-family: radnika-bold-condensed;">Level Up: Know Your Crit Chance</h3>
-                        <p class="last-updated" style="font-size: 12px;">Alex Cloud</p>
-                        <p class="last-updated" style="font-size: 12px; margin-top: -12px;">June 09, 2018</p>
+                    <div class="col-lg-5 col-md-6 col-sm-12 archive-blurb">
+                        <h3 class="article-archive-header">Level Up: Know Your Crit Chance</h3>
+                        <p class="last-updated">Alex Cloud</p>
+                        <p class="last-updated">June 09, 2018</p>
                     </div>
                 </div>
-
-                <div class="row tool" id="tool1">
-                    <div class="col-4">
-                        <img src="static/mockup-assets/summoners-cup.jpg" class="tool-thumbnail">
+                <div class="row tool">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="static/mockup-assets/summoners-cup.jpg" class="article-archive-thumbnail">
                     </div>
-
-                    <div class="col-7" style="margin-left: -38px;">
-                        <h3 style="font-size: 24px; font-family: radnika-bold-condensed;">Rabadon's Death Recap: Fixing League's Most Broken Tool</h3>
-                        <p class="last-updated" style="font-size: 12px;">Derek Fulton</p>
-                        <p class="last-updated" style="font-size: 12px; margin-top: -12px;">June 09, 2018</p>
+                    <div class="col-lg-5 col-md-6 col-sm-12 archive-blurb">
+                        <h3 class="article-archive-header">Rabadon's Death Recap: Fixing League's Most Broken Tool</h3>
+                        <p class="last-updated">Derek Fulton</p>
+                        <p class="last-updated">June 09, 2018</p>
                     </div>
                 </div>
-
-                <div class="row tool" id="tool1">
-                    <div class="col-4">
-                        <img src="static/mockup-assets/lulu-crit-teal.png" class="tool-thumbnail">
+                <div class="row tool">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="static/mockup-assets/lulu-crit-teal.png" class="article-archive-thumbnail">
                     </div>
-
-                    <div class="col-7" style="margin-left: -38px;">
-                        <h3 style="font-size: 24px; font-family: radnika-bold-condensed;">Win Conditions: How Much Does Champ Select Matter?</h3>
-                        <p class="last-updated" style="font-size: 12px;">Alex Cloud</p>
-                        <p class="last-updated" style="font-size: 12px; margin-top: -12px;">June 09, 2018</p>
+                    <div class="col-lg-5 col-md-6 col-sm-12 archive-blurb">
+                        <h3 class="article-archive-header">Win Conditions: How Much Does Champ Select Matter?</h3>
+                        <p class="last-updated">Alex Cloud</p>
+                        <p class="last-updated">June 09, 2018</p>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br>    
+
+    <br><br><br><br><br><br>
+
     <div class="row" id="bottomPadding" style="border-bottom: 1px solid;">
         <br>
         <br>
