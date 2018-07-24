@@ -50,6 +50,10 @@ body {
     background-color: #F8F8F8;
 }
 
+.extra-padding-right {
+    padding-right: 50px !important;
+}
+
 .archive-container {
     margin-top: 20px;
 }
@@ -69,6 +73,39 @@ body {
 .archive-blurb {
     margin-left: -38px;
     margin-top: 10px;
+}
+
+.archive-synopsis {
+    font-family: radnika-condensed;
+    font-size: 15px;
+
+}
+
+.side-bar {
+    border-left: 1px dashed black;  
+}
+
+.side-header {
+    font-family: radnika-black;
+    font-size: 40px;
+}
+
+.side-info {
+    font-family: radnika-medium;
+    font-size: 18px;
+}
+
+.sub-header {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-family: radnika-bold;
+    margin-top: 3px;
+}
+
+.last-updated {
+    color: #B1AABC; 
+    font-family: radnika-condensed;
+    font-size: 13px;
 }
 
 .footer-disclaimer {
@@ -106,13 +143,12 @@ body {
     width: 100%;
 }
 
-<<<<<<< HEAD
 .bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
 }
-=======
+
     .navbar {
         border-bottom: 1px black solid;
     }
@@ -128,7 +164,6 @@ body {
       font-family: radnika-bold-condensed;
       font-size: 38px;
     }
->>>>>>> 736826da5975ec3e3442c0613a40eb20aa1bca4d
 
 .bottom-right {
     position: absolute;
@@ -384,7 +419,7 @@ button.recommended-matchup-button:active {
     background-color: rgb(0,0,0); 
     background: linear-gradient(45deg, #ba3f5d, #496bb9);   
     overflow-x: hidden; 
-    transition: 0.5s;
+    transition: 01s;
 }
 
 .overlay-content {
@@ -460,7 +495,7 @@ button.recommended-matchup-button:active {
     display: flex;
     justify-content: center;
     height: 100%;
-    transition: background .5s ease;
+    transition: background 1s ease;
     width: 100%;
 }
 
@@ -539,7 +574,7 @@ body {
     font-family: radnika-medium-condensed; 
     font-size: 12px; 
     margin-top: -17px; 
-    color: grey;
+    color: #B1AABC;
 }
 
 .current-student {
@@ -556,6 +591,32 @@ body {
 
 #analysts {
     font-size: 20px;
+}
+
+.headshot {
+    border-radius: 50%;
+}
+
+.headshot-name {
+    font-family: radnika-bold-condensed;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.headshot-title {
+    font-family: radnika-medium-condensed;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -22px;
+    color: #B1AABC;;
+}
+
+.headshot-info {
+    font-family: radnika-condensed;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -18px;
 }
 
 /* Article */
@@ -622,24 +683,11 @@ body {
 }
 
 /* Contact */
-h1 {
-    font-family: radnika-black;
-    font-size: 40px;
-}
-
-h4 {
-    font-family: radnika-bold;
-    font-size: 18px;
-}
-
-h6 {
-    font-family: radnika-semibold;
-}
-
-#email-text {
-    border-bottom: 2px solid grey;
+.social-name {
+    font-family: radnika-medium-condensed;
     font-size: 20px;
-
+    color: black;
+    margin-top: 3px;
 }
 
 #email-address {
@@ -648,39 +696,12 @@ h6 {
     font-size: 20px;
 }
 
-#contact-details {
-    border-right: 2px dashed grey;  
-}
-
 .twitter-timeline {
-    padding: 30px !important;
-    margin-top: -30px !important;
-}
-
-#contact-email-first {
-    color: black;
-    font-family: radnika-semibold;
-}
-
-#contact-email-first:hover {
-    color: #93bcff;
-    text-decoration: none;
-}
-
-#facebook-and-twitter {
-    margin-top: 15px;
-    font-family: radnika-medium-condensed;
-    font-size: 20px;
+    padding-left: 15px !important;
 }
 
 #facebook-row {
     margin-bottom: 10px;
-}
-
-.facebook-or-twitter-text {
-    margin-left: -15px;
-    margin-top: 3px;
-    font-size: 20px;
 }
 
 /* Logistic */
@@ -763,6 +784,12 @@ input:focus {
         border-bottom: 1px black solid;
     }
     
+    .navbar-logo {
+        width: 20%; 
+        height: auto; 
+        min-width: 210px;
+        max-width: 100%;
+    }
 
     .red-team-percentage {
       fill: #ba3f5d;
@@ -806,6 +833,12 @@ input:focus {
 
     a.mail-to:hover {
         color: black !important;
+    }
+
+    #bottomPadding  {
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 8px 6px -6px #999;
     }
 
     ul#red-synergies li {
@@ -864,7 +897,7 @@ input:focus {
 }
 
 .tool {
-    border-bottom: dashed .5px black; 
+    border-bottom: dashed 1px black; 
     padding: 25px;
 }
 
@@ -873,16 +906,4 @@ input:focus {
     text-align: left; 
     font-size: 24px;
     margin-bottom: 5px;
-} 
-
-.tool-synopsis {
-    font-family: radnika-condensed;
-    font-size: 12px;
-
-}
-
-.last-updated {
-    color: #B1AABC; 
-    font-family: radnika-condensed;
-    font-size: 12px;
 }
