@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Logistic Regression</title>
   <link rel="stylesheet" href="static/awesomplete.css" />
@@ -17,37 +18,38 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="container">
-    <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
-            <div class="d-none d-sm-block">
-                    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
-                        <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
-                        <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px;"></a>
-                        <div>
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="color: black"><b>Learn</b></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/tools" style="color: black"><b>Tools</b></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="color: black"><b>About</b></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="color: black"><b>Contact</b></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-            </div>
+<body class="container">
+
+        <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
+
+        <div class="d-none d-sm-block">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -7px;"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px; "></a>
+                    <div>
+                        <ul class="navbar-nav" style="margin-bottom: -10px; margin-top: -10px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Learn</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/tools"><b>Tools</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>About</b></a>
+                            </li>
+                            <li class="nav-item nav-item-last">
+                                <a class="nav-link" href="#"><b>Contact</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
       <div class="jumbotron text-center"  style="margin-bottom: -70px; background-color: white;">
         <h1 style="font-family: radnika-black; font-size: 40px;">[ ARAM Win Predictor ]</h1>
         <p style="font-family: radnika-medium">Using logistic regression, calculate the likelihood of a team winning based on champions picked.</p>
         <a href="/"><p style="font-family: radnika-medium;">→ Read the full post</p></a>
       </div>
-
 
   <div class="row">
       <div class="col-lg-8" style="margin-right: -10;">
