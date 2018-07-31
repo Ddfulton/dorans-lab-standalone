@@ -3,7 +3,7 @@
 <head>
   <title>Logistic Regression</title>
   <link rel="stylesheet" href="static/awesomplete.css" />
-  <link rel="stylesheet" href="static/logistic_style.css" />
+  <link rel="stylesheet" href="static/logistic.css" />
   <script src="static/awesomplete.js" async></script>
   <script src="static/d3.v5.min.js"></script>
   <script src="static/d3-interpolate.v1.min.js"></script>
@@ -12,7 +12,7 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="static/styles/logistic.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
@@ -79,11 +79,11 @@
 
 
   <div class="row">
-      <div class="col-lg-8" style="margin-right: -10px;">
+      <div class="col-lg-8" style="margin-left: -40px;">
           <div class="panel panel-default" id="content" style="float: right; margin-right: 20px;  "" margin-right: 30px;">
           </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4" style="margin-left: 40px">
           <div class="panel panel-default">
               <div class="panel-body">
                 <p style="font-family: radnika-bold-condensed; font-size: 30px; margin-bottom: -4px; text-align: center;">Champion Select</p>
@@ -92,11 +92,14 @@
                   </div>
 
                   <div class="row">
+                    
                     <table id="input-table">
                       <tr>
                         <div class="row">
                           <div class="col-md-6">
-                            <td style="background-color: #ba3f5d;"><a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #ba3f5d; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 10px;">Red Team</b></br></h3></a>
+                            <td style="background-color: #ba3f5d;">
+                              <a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #ba3f5d; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 0px;">Red Team</b></br></h3>
+                              </a>
                               <a onclick="randomizeRedTeam();"><img class="img-fluid" src="static/mockup-assets/shuffle-circle-red.png" style="float: right; margin-top: -35px; margin-right: 20px; height: 30px; background: black; border-radius: 16px; cursor: pointer;"></a>
                             </td>
                           </div>
@@ -111,8 +114,12 @@
                         </div>
                       </tr>
                       <tr>
-                        <td><input type="text" spellcheck="false" class="awesomecomplete redteam" value="Ashe"></td>
-                        <td><input type="text" class="awesomecomplete blueteam"  value="Amumu"></td>
+                        <div class="row">
+                          <div class="col-12">
+                            <td><input type="text" spellcheck="false" class="awesomecomplete redteam" value="Ashe"></td>
+                            <td><input type="text" class="awesomecomplete blueteam"  value="Amumu"></td>
+                          </div>
+                        </div>
                       </tr>
                       <tr>
                         <td><input type="text" class="awesomecomplete redteam" value="Ahri"></td>
@@ -180,8 +187,8 @@
       </div>
   </div>
 
-<div class="row">
-<div class="row" id="bottomPadding">
+
+<div class="row" id="bottomPadding" style="border-bottom: 1px solid;">
     <br>
     <br>
     <br>
@@ -194,23 +201,23 @@
       <div class="row" id="footer">
           <div class="col-md-5" style="margin-top: 10px;">
               <p class="footer-disclaimer">Doran's Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends or Riot Games are trademarks or registered trademarks of Riot Games, Inc. Copyright Riot Games, Inc.</p>
-              <br>
-              <p class="copyright" >Copyright 2018 <u>Laber Labs</u></p>
+              
+              <p class="copyright">Copyright 2018 <u><a href="http://www.laber-labs.com/">Laber Labs</a></u></p>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
               <img id="facebook-icon" src="static/mockup-assets/facebook-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;">
-              <img id="twitter-icon" src="static/mockup-assets/twitter-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;">
+              <a href="https://twitter.com/laberlabs?lang=en"><img id="twitter-icon" src="static/mockup-assets/twitter-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;"></a>
               <br/><br/>
               <p style="font-family: radnika-bold-condensed; font-size: 12px; text-align: right; color: #b1aabc;">Contact Us</p>
-              <p class="mail-to" style="font-family: radnika-medium-condensed; font-size: 12px; text-align: right;"><u><a style="color: #b1aabc;" class="mail-to" href="mailto:LaberLabsLol@gmail.com">LaberLabsLol@gmail.com</a></u></p>
+              <p class="mail-to" style="font-family: radnika-medium-condensed; font-size: 12px; text-align: right;"><u><a style="color: #b1aabc; margin-top: 50px;" class="mail-to" href="mailto:LaberLabsLol@gmail.com">LaberLabsLol@gmail.com</a></u></p>
           </div>
           <div class="col-md-1">
-              <img class="img-fluid" src="static/mockup-assets/dorans-lab-logo.png" style="height: 100px; width: auto;">
+              <img class="img-fluid" src="static/Sm-dorans-lab-icon.png" style="height: 70px; width: auto;">
           </div>
       </div>
   </div>
-  <!-- END DESKTOP FOOTER -->
+<!-- END DESKTOP FOOTER -->
 
 </div>
 
@@ -218,6 +225,13 @@
 
 
 <script type="text/javascript">
+
+
+
+
+
+
+
 d3.selectAll(".redteam").attr("spellcheck", "false")
 d3.selectAll(".blueteam").attr("spellcheck", "false")
 
@@ -532,6 +546,15 @@ function updateChampionsToIncludeCoefficient() {
 
 $( document ).ready(function() {
 
+  $.ajax({
+        type: "GET",
+        url: "static/table.csv",
+        dataType: "text",
+        success: function(data) {
+          console.log("Hey");
+        }
+     });
+
   // Make them awesomecomplete
   var inputs = document.getElementsByClassName("awesomecomplete")
   
@@ -698,7 +721,7 @@ d3.selectAll("g#mainCanvas").append("text")
 d3.selectAll("g#mainCanvas").append("text")
   .attr("x", 100)
   .attr("y", yD)
-  .text("% chance of winning")
+  .text("chance of winning")
   .attr("font-family", "radnika-bold-condensed")
   .attr("class", "red-team-percentage")
   .attr("font-size", "12px");
@@ -743,7 +766,7 @@ d3.selectAll("g#mainCanvas").append("text")
 d3.selectAll("g#mainCanvas").append("text")
   .attr("x", 100)
   .attr("y", yD)
-  .text("% chance of winning")
+  .text("chance of winning")
   .attr("font-family", "radnika-bold-condensed")
   .attr("class", "blue-team-percentage")
   .attr("font-size", "12px");
@@ -756,7 +779,6 @@ randomizeBlueTeam();
 
 
 
-var format = d3.format(".3i");
 
 function transitionRedTeamTo(newAmount){
   var newAmt = 100*newAmount;
@@ -766,13 +788,18 @@ function transitionRedTeamTo(newAmount){
     .on("start", function repeat() {
       d3.active(this)
           .tween("text", function() {
-            var that = d3.select(this),
-                i = d3.interpolateNumber(that.text().replace(/,/g, ""), newAmt);
-            return function(t) { that.text(format(i(t))); };
+            var that = d3.select(this); 
+            // Prune "%"
+            var i = d3.interpolateNumber(that.text().replace(/%/, ""), newAmt);
+
+            return function(t) { 
+              // that.text(format(i(t))); 
+              var vals = i(t);
+              that.text(d3.format(".1%")(vals/100)); 
+            };
           })
         .transition()
           .delay(1500)
-          .on("start", repeat);
     });
 }
 
@@ -784,13 +811,16 @@ function transitionBlueTeamTo(newAmount){
     .on("start", function repeat() {
       d3.active(this)
           .tween("text", function() {
-            var that = d3.select(this),
-                i = d3.interpolateNumber(that.text().replace(/,/g, ""), newAmt);
-            return function(t) { that.text(format(i(t))); };
+            var that = d3.select(this);
+            var i = d3.interpolateNumber(that.text().replace(/%/, ""), newAmt);
+            
+            return function(t) { 
+              var vals = i(t);
+              that.text(d3.format(".1%")(vals/100)); 
+            };
           })
         .transition()
           .delay(1500)
-          .on("start", repeat);
     });
 }
 
