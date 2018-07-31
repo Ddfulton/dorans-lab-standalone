@@ -21,32 +21,33 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 </head>
 
-<body>
-<div class="container">
+<body class="container">
     
 
     <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
+
     <div class="d-none d-sm-block">
-            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
-                <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <div class="container">
                 <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -7px;"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px; "></a>
                 <div>
                     <ul class="navbar-nav" style="margin-bottom: -10px; margin-top: -10px;">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>Learn</b></a>
+                            <a class="nav-link" href="#"><b>Learn</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/tools" style="color: black"><b>Tools</b></a>
+                            <a class="nav-link" href="/tools"><b>Tools</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>About</b></a>
+                            <a class="nav-link" href="#"><b>About</b></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>Contact</b></a>
+                        <li class="nav-item nav-item-last">
+                            <a class="nav-link" href="#"><b>Contact</b></a>
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </div>
 
     <!-- VISIBLE ONLY ON MOBILE: THIS IS THE MOBILE NAVBAR -->
@@ -77,7 +78,7 @@
     <br><br><br>
 
     <div class="row">
-        <div div class="col-lg-12 col-md-12 col-sm-12 archive-container">
+        <div div class="col-lg-12 col-md-12 col-sm-12 header-container">
             <h1 class="archive-header">Read All About It</h1>
             <h6 class="archive-info">Dive into our process, take a peak behind-the-scenes, and all that good stuff</h6>
         </div>
@@ -86,7 +87,7 @@
     <br><br>
 
     <div class="row">
-        <div class="col-lg-9 col-md-12 col-sm-12">
+        <div class="col-lg-9 col-md-12 col-sm-12 extra-padding-right extra-margin-bottom">
             <div class="tools-list">
                 <div class="row tool">
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -120,70 +121,39 @@
                 </div>
             </div>
         </div>
+        <div class="col-lg-3 col-md-6 col-sm-9 side-bar">
+            <div class="col-12">
+                <h4 class="sub-header">Coming Soon!</h4>
+            </div>
+            <div class="col-12">
+                <img src="assets/animated-manual.gif">
+                <h3 class="sidebar-title">Doran's Lab Manual</h3>
+                <p class="sidebar-blurb">Everything you need to know to get you started on data analysis</p>
+            </div>
+        </div>
     </div>
 
-    <br><br><br><br><br><br>
-
-    <div class="row" id="bottomPadding" style="border-bottom: 1px solid;">
-        <br>
-        <br>
-        <br>
-    </div>
-    <br>
-    <div class="d-none d-sm-block">
-            <div class="row" id="footer">
-                <div class="col-md-5" style="margin-top: 10px;">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <p class="footer-header">Don't Sue Us</p>
                     <p class="footer-disclaimer">Doran's Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends or Riot Games are trademarks or registered trademarks of Riot Games, Inc. Copyright Riot Games, Inc.</p>
-                    
-                    <p class="copyright">Copyright 2018 <u><a href="http://www.laber-labs.com/">Laber Labs</a></u></p>
+                    <p class="copyright">Copyright 2018 <a class="outlink" href="http://www.laber-labs.com/"><u>Laber Labs</u></a></p>
                 </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                    <img id="facebook-icon" src="static/mockup-assets/facebook-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;">
-                    <a href="https://twitter.com/laberlabs?lang=en"><img id="twitter-icon" src="static/mockup-assets/twitter-passive.png" style="width:10%; height: auto; float: right;margin-right: 4px;"></a>
-                    <br/><br/>
-                    <p style="font-family: radnika-bold-condensed; font-size: 12px; text-align: right; color: #b1aabc;">Contact Us</p>
-                    <p class="mail-to" style="font-family: radnika-medium-condensed; font-size: 12px; text-align: right;"><u><a style="color: #b1aabc; margin-top: 50px;" class="mail-to" href="mailto:LaberLabsLol@gmail.com">LaberLabsLol@gmail.com</a></u></p>
+                <div class="col-lg-2 col-md-4 col-sm-3">
+                    <p class="footer-header">Contact Us</p>
+                    <a href="mailto:LaberLabsLol@gmail.com"><p class="outlink mail-to">LaberLabsLol@gmail.com</p></a>
+                    <a href="https://www.facebook.com/DoransLab/"><img class="social-icon" src="assets/icons/facebook-active.png"></a>
+                    <a href="https://twitter.com/laberlabs?lang=en"><img class="social-icon" src="assets/icons/twitter-active.png"></a>
                 </div>
-                <div class="col-md-1">
-                    <img class="img-fluid" src="static/Sm-dorans-lab-icon.png" style="height: 70px; width: auto;">
+                <div class="col-lg-2 offset-lg-3 col-md-3 col-sm-4 footer-right">
+                    <img class="footer-logo" src="assets/icons/footer-logo.png">
                 </div>
             </div>
         </div>
-</div>
+    </footer>
 
-
-
-<script type="text/javascript">
-    // var article = {
-    //     "thumbnail_path": "static/tool_thumbnails/aram_win_predictor.png",
-    //     "title": "ARAM Win Predictor",
-    //     "synopsis": "Using logistic regression, calculate the likelihood of a team winning based on champions picked",
-    //     "last_updated": "June 09, 2018"
-    // };
-
-</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

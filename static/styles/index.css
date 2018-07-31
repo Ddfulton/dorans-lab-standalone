@@ -44,17 +44,134 @@
     src: url(../radnika_font/Radnika-Medium.otf);
 }
 
+/* Nav-bar and Footer */
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  background-color: #7d6096;
+  width: 100vw;
+  left: calc(-1 * (100vw - 100%) / 2);
+  margin-top: 100px;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-item-last {
+  padding-right: 0 !important;
+}
+
+.navbar-brand {
+  width: 15%;
+  height: auto;
+  min-width: 200px;
+}
+
+.navbar {
+  padding-top: 10px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.social-icon {
+  width: 10% !important;
+  min-width: 35px;
+  height: auto;
+  margin-right: 4px;
+  margin-bottom: 15px;
+}
+
+.footer-header {
+  font-family: radnika-semibold;
+  font-size: 12px;
+  color: #f8f8f8;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.mail-to {
+  font-family: radnika-condensed;
+  font-size: 12px;
+  color: #f8f8f8 !important;
+}
+
+.footer-logo {
+  min-width: 85px;
+  max-width: 85px;
+  padding: 8px;
+}
+
 /* General */
+html {
+  height: 100%;
+  width: 100%;
+}
 
 body {
     background-color: #F8F8F8;
 }
 
-.extra-padding-right {
-    padding-right: 50px !important;
+a:hover {
+  color: black;
 }
 
-.archive-container {
+.break-out {
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.capsule-box {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.outlink {
+    color: black !important;
+}
+
+.outlink:hover {
+    color: black !important;
+}
+
+.extra-padding-right {
+    padding-right: 100px !important;
+}
+
+.extra-margin-bottom {
+    margin-bottom: 50px !important;
+}
+
+.extra-margin-top {
+    margin-top: 50px !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.highlight {
+    background-color: #F8F8F8;
+}
+
+.header-container {
     margin-top: 20px;
 }
 
@@ -62,12 +179,14 @@ body {
     text-align: center;
     font-family: radnika-black;
     font-size: 40px;
+    color: black;
 }
 
 .archive-info {
     text-align: center;
     font-family: radnika-medium;
     font-size: 18px;
+    color: black;
 }
 
 .archive-blurb {
@@ -78,21 +197,40 @@ body {
 .archive-synopsis {
     font-family: radnika-condensed;
     font-size: 15px;
+    color: black;
 
 }
 
 .side-bar {
-    border-left: 1px dashed black;  
+    padding-left: 50px;
+    border-left: 1px solid black;  
+}
+
+.sidebar-title {
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: radnika-bold-condensed;
+    color: black;
+    text-align: center;
+}
+
+.sidebar-blurb {
+    font-family: radnika-condensed;
+    font-size: 12px;
+    color: black;
+    text-align: center;
 }
 
 .side-header {
     font-family: radnika-black;
     font-size: 40px;
+    color: black;
 }
 
 .side-info {
     font-family: radnika-medium;
     font-size: 18px;
+    color: black;
 }
 
 .sub-header {
@@ -100,30 +238,32 @@ body {
     font-size: 20px;
     font-family: radnika-bold;
     margin-top: 3px;
+    margin-bottom: 15px;
+    color: black;
 }
 
 .last-updated {
-    color: #B1AABC; 
+    color: #7d6096; 
     font-family: radnika-condensed;
     font-size: 13px;
 }
 
 .footer-disclaimer {
-    font-family: radnika-condensed;
+    font-family: radnika-regular;
     font-size: 10px;
-    color: #b1aabc;
+    color: #f8f8f8;
 }
 
 .footer-disclaimer-mobile {
     font-family: radnika-condensed;
     font-size: 8px;
-    color: #b1aabc;
+    color: #7d6096;
 }
 
 .copyright {
     font-family: radnika-regular;
     font-size: 12px;
-    color: #b1aabc;
+    color: black;
 }
 
 .fill {
@@ -183,6 +323,17 @@ body {
     left: 16px;
 }
 
+/* Index */
+.recent-title {
+  text-align: right;
+}
+
+.desktop-headline-text {
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 1.3;
+}
 
 #champ1 {
     height: 100px;
@@ -328,7 +479,7 @@ div.content img {
 div.content p.content-text {
   font-family: radnika-regular;
   font-size: 12px;
-  color: #b1aabc;
+  color: #7d6096;
 }
 
 div.content p.author-and-date {
@@ -341,10 +492,6 @@ div.content p.author-and-date-mobile {
   font-family: radnika-italic;
   font-size: 7px;
   text-align: right;
-}
-
-a.mail-to:hover {
-    color: black !important;
 }
 
 div#top-champions h6 b {
@@ -375,8 +522,8 @@ div#top-champions p.top-champion-ordinal {
 button.recommended-matchup-button {
     font-family: radnika-regular;
     font-size: 8px;
-    color: #b1aabc;
-    border: 1px solid #b1aabc;
+    color: #7d6096;
+    border: 1px solid #7d6096;
     outline: none;
     border-radius: 2px;
     cursor: pointer;
@@ -385,23 +532,13 @@ button.recommended-matchup-button {
 button.recommended-matchup-button-mobile {
     font-family: radnika-regular;
     font-size: 8px;
-    color: #b1aabc;
-    border: 1px solid #b1aabc;
+    color: #7d6096;
+    border: 1px solid #7d6096;
     outline: none;
 }
 
 button.recommended-matchup-button:active {
     transform: translateY(2px);
-}
-
-#twitter-icon:hover {
-    content:url('../mockup-assets/twitter-onHover.png');
-    cursor: pointer;
-}
-
-#facebook-icon:hover {
-    content:url('../mockup-assets/facebook-onHover.png');
-    cursor: pointer;
 }
 
 .stats-headline-text-mobile b {
@@ -515,14 +652,6 @@ button.recommended-matchup-button:active {
     
 }
 
-.desktop-headline-text {
-    background: #f9f9f9;
-    opacity: .75;
-    cursor: pointer;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
 .mobile-content-headline-text {
     background: #F8F8F8;
     opacity: 1;
@@ -560,37 +689,23 @@ img#hamburger-img:focus {
     outline: none;
 }
 
-body {
-    padding-bottom: 20px;
-}
-
 /* About */
 .analyst {
     font-family: radnika-medium-condensed; 
     font-size: 15px;
+    margin-bottom: 0; 
 }
 
 .analyst-description {
     font-family: radnika-medium-condensed; 
-    font-size: 12px; 
-    margin-top: -17px; 
-    color: #B1AABC;
+    font-size: 12px;
+    color: #a19da8;
 }
 
-.current-student {
+.base-name {
     margin-bottom: -2px; 
     font-family: radnika-condensed; 
     font-size: 15px;
-}
-
-.alumnus {
-    margin-bottom: -2px; 
-    font-family: radnika-condensed; 
-    font-size: 15px;
-}
-
-#analysts {
-    font-size: 20px;
 }
 
 .headshot {
@@ -602,24 +717,77 @@ body {
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .headshot-title {
     font-family: radnika-medium-condensed;
     font-size: 16px;
     text-align: center;
-    margin-top: -22px;
-    color: #B1AABC;;
+    color: #7d6096;
+    margin-bottom: 0;
 }
 
 .headshot-info {
     font-family: radnika-condensed;
     font-size: 12px;
     text-align: center;
-    margin-top: -18px;
+    margin-bottom: 50px;
 }
 
 /* Article */
+.article-title {
+    text-align: center;
+    color: black; 
+    font-size: 40px;
+    font-family: radnika-black;
+    line-height: 1.3;
+}
+
+.article-pips {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-family: radnika-medium;
+}
+
+.article-subheader {
+    text-align: left;
+    font-size: 20px;
+    font-family: radnika-bold;
+}
+
+.article-copy {
+    text-align: left;
+    font-size: 14px;
+    font-family: radnika-regular;
+}
+
+.article-author {
+  font-family: radnika-bold-condensed;
+  font-size: 17px;
+}
+
+.social-row {
+  padding: 30px;
+}
+
+.social-share {
+  max-width: 40px;
+  margin: 5px;
+}
+
+.article-circle-photo {
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
+
+.meet-rest-of-team-outlink {
+  font-family: radnika-semibold;
+  font-size: 12px;
+  color: black;
+}
+
 .article-archive-thumbnail {
     width: 100%; 
     height: auto; 
@@ -629,57 +797,11 @@ body {
 .article-archive-header {
     font-size: 24px;
     font-family: radnika-bold-condensed;
-}
-
-.banner-and-title {
-    height: 350px;
-    background:transparent url('../mockup-assets/brand.jpg') no-repeat center center;
-}
-
-.article-sidebar-teaser-text {
-    background: #F8F8F8;
-    opacity: .75;
-    cursor: pointer;
-    padding-left: 3px;
-    padding-right: 3px;
-    font-size: 12px;
-    font-family: radnika-medium-condensed;
-}
-
-.dot1 {
-  height: 25px;
-  width: 25px;
-  background-color: #2376ff;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 3px;
-}
-
-.dot2 {
-  height: 25px;
-  width: 25px;
-  background-color: #88b4fc;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 3px;
+    color: black;
 }
 
 .center {
     text-align: center;
-}
-
-.author-box {
-
-}
-
-.meet-rest-of-team {
-  color: grey;
-
-}
-
-.meet-rest-of-team:hover {
-  color: #84b2ff;
-  text-decoration: none;
 }
 
 /* Contact */
@@ -688,6 +810,17 @@ body {
     font-size: 20px;
     color: black;
     margin-top: 3px;
+}
+
+.contact-social-icon {
+    padding-bottom: 10px;
+}
+
+.desc-header {
+    font-family: radnika-condensed;
+    font-size: 15px;
+    color: #a19da8;
+    margin-bottom: 2px;
 }
 
 #email-address {
@@ -811,36 +944,6 @@ input:focus {
       font-family: radnika-bold;
       }
 
-      .footer-disclaimer {
-        font-family: radnika-condensed;
-        font-size: 10px;
-        color: #b1aabc;
-    }
-
-    .copyright {
-        font-family: radnika-regular;
-        font-size: 12px;
-        color: #b1aabc;
-    }
-
-    #twitter-icon:hover {
-        content:url('static/mockup-assets/twitter-onHover.png');
-    }
-
-    #facebook-icon:hover {
-        content:url('static/mockup-assets/facebook-onHover.png');
-    }
-
-    a.mail-to:hover {
-        color: black !important;
-    }
-
-    #bottomPadding  {
-        -webkit-box-shadow: 0 8px 6px -6px #999;
-        -moz-box-shadow: 0 8px 6px -6px #999;
-        box-shadow: 0 8px 6px -6px #999;
-    }
-
     ul#red-synergies li {
       font-family: radnika-condensed;
       font-size: 15px; 
@@ -897,7 +1000,7 @@ input:focus {
 }
 
 .tool {
-    border-bottom: dashed 1px black; 
+    border-bottom: solid 1px black; 
     padding: 25px;
 }
 
