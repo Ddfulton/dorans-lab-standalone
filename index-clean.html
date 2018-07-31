@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Doran's Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/styles/index.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </script>
+    <script type="text/javascript" src="static/disablescroll.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+</head>
+
+<body class="container">
+
+    <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
+
+        <div class="d-none d-sm-block">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -7px;"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px; "></a>
+                    <div>
+                        <ul class="navbar-nav" style="margin-bottom: -10px; margin-top: -10px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Learn</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/tools"><b>Tools</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>About</b></a>
+                            </li>
+                            <li class="nav-item nav-item-last">
+                                <a class="nav-link" href="#"><b>Contact</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    <!-- DESKTOP HEADLINE CONTENT -->
+                <div class="d-none d-sm-block">
+                <div class="row">
+                    <div class="col-md-8 no-margin">
+                        <div class="fill no-padding" style="margin-right: -15px;" id="headline-content">
+                            <a><img class="img-fluid" src="static/mockup-assets/lulu-figure-blur.png" style="max-width: 100%; height: auto; margin-bottom: -18px;"></a>
+                            <div class="bottom-right">
+                                
+                                <a><h1 style="text-align: right;"><b class="desktop-headline-text" style="color: black; ">Level up:</b></h1></a>
+                                <a><h1 style="text-align: right;"> <b style="color: black;" class="desktop-headline-text" >Know your</b></h1></a>
+                                <a><h1 style="text-align: right;"><b style="color: black;" class="desktop-headline-text">Crit Chance</b></h1></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" id="secondary-headline">
+                        <div class="row" style="margin-left: -30px; margin-right: -30px;">
+                            <div class="col-md-12">
+                                <div class="fill" id="top-right-headline">
+
+                                    <a><img class="img-fluid" src="static/mockup-assets/summoners-cup.jpg" style="max-width: 100%; height: auto; font-family: radnika-bold-condensed;" class="no-padding"></a>
+
+                                    <div class="bottom-left" style="margin-left: 10px;">
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black; margin-left: 5px;" class="desktop-headline-text">Draftwinner: A Tool To</b></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black; margin-left: 5px;" class="desktop-headline-text">Help You Win At Champion</b></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black; margin-left: 5px;" class="desktop-headline-text">Select</b></br></h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 no-padding">
+                                <a><img class="img-fluid" src="static/mockup-assets/summoners-cup.jpg" style="width: 200px; height: 231px"></a>
+                                <div class="bottom-left tertiary-headline" style="margin-left: 0px; margin-bottom: 12px;">
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Skill Caps</b></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">and Skill</b></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Floors: A</b></br></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Look at</b></br></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Champion</b></br></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Difficulty</b></br></h3></a>
+                                    </div>
+                            </div>
+                            <div class="col-md-6 no-padding">
+                                <a><img class="img-fluid" src="static/mockup-assets/summoners-cup.jpg" style="width: 100%; height: 100%;"></a>
+                                <div class="bottom-left tertiary-headline" style="margin-left: 0px; margin-bottom: 12px;">
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Rabadon's Death</b></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Recap: Fixing</b></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">League's Most</b></br></h3></a>
+                                        <a><h3 style="margin-bottom: -5px;"><b style="color: black;" class="desktop-headline-text">Broken Tool</b></br></h3></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Secondary content -->
+    <div class="row content">
+        <!-- Recent articles -->
+        <div class="col-12">
+            <div class="col-4">
+                <img src="static/mockup-assets/lulu-crit-teal.png">
+            </div>
+            <div class="col-4">
+                <p class="author-and-date">January 04, 2018</p>
+                <p class="author-and-date">Alex Cloud</p>
+                <h3 class="desktop-headline-text highlight"><span class="highlight">Win Conditions: How Much Does Champ Select Matter?</span></h3>
+            </div>
+            <div class="col-6">
+                <img src="static/mockup-assets/lulu-crit-teal.png">
+            </div>
+            <div class="col-6">
+                <p class="author-and-date">January 04, 2018</p>
+                <p class="author-and-date">Alex Cloud</p>
+                <h3 class="desktop-headline-text highlight"><span class="highlight">Win Conditions: How Much Does Champ Select Matter?</span></h3>
+            </div>
+        </div>
+    
+        <!-- Sidebar stats-->
+        <div class="col-lg-3 col-md-6 col-sm-9 side-bar no-margin" id="top-champions">
+            <div class="d-none d-sm-block">
+                <h6>Top Five Strongest Champions</h6>
+            </div>
+            <div class="d-none d-sm-block">
+                <p id="last-updated">Last updated 15 minutes ago</p>
+            </div>
+            <button class="recommended-matchup-button see-recommended-matchup-text">See Recommended Match-Up</button>
+
+            <div class="d-none d-sm-block">
+                <div class="row daily-stats-row">
+                    <div class="col-6">
+                        <img class="daily-stats-circle" src="assets/square-placeholder.png">
+                    </div>
+                    <div class="col-6">
+                        <p>Anivia</p>
+                        <p>Winrate: 52%</p>
+                    </div>
+                </div>
+                <div class="row daily-stats-row">
+                    <div class="col-6">
+                        <img class="daily-stats-circle" src="assets/square-placeholder.png">
+                    </div>
+                    <div class="col-6">
+                        <p>Anivia</p>
+                        <p>Winrate: 52%</p>
+                    </div>
+                </div>
+                <div class="row daily-stats-row">
+                    <div class="col-6">
+                        <img class="daily-stats-circle" src="assets/square-placeholder.png">
+                    </div>
+                    <div class="col-6">
+                        <p>Anivia</p>
+                        <p>Winrate: 52%</p>
+                    </div>
+                </div>
+                <div class="row daily-stats-row">
+                    <div class="col-6">
+                        <img class="daily-stats-circle" src="assets/square-placeholder.png">
+                    </div>
+                    <div class="col-6">
+                        <p>Anivia</p>
+                        <p>Winrate: 52%</p>
+                    </div>
+                </div>
+                <div class="row daily-stats-row">
+                    <div class="col-6">
+                        <img class="daily-stats-circle" src="assets/square-placeholder.png">
+                    </div>
+                    <div class="col-6">
+                        <p>Anivia</p>
+                        <p>Winrate: 52%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <p class="footer-header">Don't Sue Us</p>
+                    <p class="footer-disclaimer">Doran's Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends or Riot Games are trademarks or registered trademarks of Riot Games, Inc. Copyright Riot Games, Inc.</p>
+                    <p class="copyright">Copyright 2018 <a class="outlink" href="http://www.laber-labs.com/"><u>Laber Labs</u></a></p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-3">
+                    <p class="footer-header">Contact Us</p>
+                    <a href="mailto:doranslab.gg@gmail.com"><p class="outlink mail-to">DoransLab.gg@gmail.com</p></a>
+                    <a href="mailto:doranslab.director@gmail.com"><p class="outlink mail-to">DoransLab.director@gmail.com</p></a>
+                    <a href="https://www.facebook.com/DoransLab/"><img class="social-icon" src="assets/icons/facebook-active.png"></a>
+                    <a href="https://twitter.com/laberlabs?lang=en"><img class="social-icon" src="assets/icons/twitter-active.png"></a>
+                </div>
+                <div class="col-lg-2 offset-lg-3 col-md-3 col-sm-4 footer-right">
+                    <img class="footer-logo" src="assets/icons/footer-logo.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

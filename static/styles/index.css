@@ -84,7 +84,8 @@
   min-width: 35px;
   height: auto;
   margin-right: 4px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .footer-header {
@@ -99,6 +100,7 @@
   font-family: radnika-condensed;
   font-size: 12px;
   color: #f8f8f8 !important;
+  margin-bottom: 0;
 }
 
 .footer-logo {
@@ -141,6 +143,10 @@ a:hover {
 
 .outlink:hover {
     color: black !important;
+}
+
+.right {
+  text-align: right;
 }
 
 .extra-padding-right {
@@ -251,7 +257,7 @@ a:hover {
 .footer-disclaimer {
     font-family: radnika-regular;
     font-size: 10px;
-    color: #f8f8f8;
+    color: black;
 }
 
 .footer-disclaimer-mobile {
@@ -289,21 +295,10 @@ a:hover {
     left: 16px;
 }
 
-    .navbar {
-        border-bottom: 1px black solid;
-    }
+.navbar {
+    border-bottom: 1px black solid;
+}
 
-    .navbar-logo {
-        width: 20%; 
-        height: auto; 
-        min-width: 210px;
-        max-width: 100%;
-    }
-    
-    #headline-content b {
-      font-family: radnika-bold-condensed;
-      font-size: 38px;
-    }
 
 .bottom-right {
     position: absolute;
@@ -324,9 +319,20 @@ a:hover {
 }
 
 /* Index */
-.recent-title {
-  text-align: right;
+.daily-stats-row {
+  margin-bottom: 25px;
 }
+
+.daily-stats-circle {
+  border-radius: 50%;
+}
+
+.author-and-date {
+  font-family: radnika-italic;
+  font-size: 12px;
+}
+
+/* ---- */
 
 .desktop-headline-text {
     cursor: pointer;
@@ -442,9 +448,7 @@ a:hover {
     font-size: 15px;
 }
 
-.navbar {
-    border-bottom: 1px black solid;
-}
+
 
 #headline-content b {
   font-family: radnika-bold-condensed;
@@ -467,27 +471,6 @@ div.content h3 {
   font-size: 30px;
 }
 
-div.content b {
-  color: black;
-}
-
-div.content img {
-  width: 84%;
-  height: 100%;
-}
-
-div.content p.content-text {
-  font-family: radnika-regular;
-  font-size: 12px;
-  color: #7d6096;
-}
-
-div.content p.author-and-date {
-  font-family: radnika-italic;
-  font-size: 8px;
-  text-align: right;
-}
-
 div.content p.author-and-date-mobile {
   font-family: radnika-italic;
   font-size: 7px;
@@ -507,16 +490,6 @@ div#top-champions p#last-updated {
 div#top-champions .top-champion b {
   font-family: radnika-bold;
   font-size: 12px;
-}
-
-div#top-champions p.winrate {
-  font-family: radnika-regular;
-  font-size: 9px;
-}
-
-div#top-champions p.top-champion-ordinal {
-  font-family: radnika-bold;
-  font-size: 20px;
 }
 
 button.recommended-matchup-button {
@@ -837,6 +810,29 @@ img#hamburger-img:focus {
     margin-bottom: 10px;
 }
 
+/* Tools */
+.tool-thumbnail {
+    width: 100%; 
+    height: auto; 
+    margin-left: -38px;
+
+    -webkit-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.3);
+}
+
+.tool {
+    border-bottom: solid 1px black; 
+    padding: 25px;
+}
+
+.tool-header {
+    font-family: radnika-black; 
+    text-align: left; 
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
 /* Logistic */
 input.redteam {
   background: white; 
@@ -906,23 +902,6 @@ input:focus {
         circle {
             fill: steelblue;
         }
-    .navbar-nav > li {
-        padding-left: 18px;
-        padding-right: 18px;
-        font-family: radnika-semibold;
-        font-size: 15px;
-    }
-
-    .navbar {
-        border-bottom: 1px black solid;
-    }
-    
-    .navbar-logo {
-        width: 20%; 
-        height: auto; 
-        min-width: 210px;
-        max-width: 100%;
-    }
 
     .red-team-percentage {
       fill: #ba3f5d;
@@ -987,26 +966,3 @@ input:focus {
     #share-button:focus {
       outline: 0;
     }
-
-/* Tools */
-.tool-thumbnail {
-    width: 100%; 
-    height: auto; 
-    margin-left: -38px;
-
-    -webkit-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.3);
-}
-
-.tool {
-    border-bottom: solid 1px black; 
-    padding: 25px;
-}
-
-.tool-header {
-    font-family: radnika-black; 
-    text-align: left; 
-    font-size: 24px;
-    margin-bottom: 5px;
-}
