@@ -3,7 +3,7 @@
 <head>
   <title>Logistic Regression</title>
   <link rel="stylesheet" href="static/awesomplete.css" />
-  <link rel="stylesheet" href="static/logistic.css" />
+  <link rel="stylesheet" href="static/styles/logistic.css" />
   <script src="static/awesomplete.js" async></script>
   <script src="static/d3.v5.min.js"></script>
   <script src="static/d3-interpolate.v1.min.js"></script>
@@ -17,31 +17,33 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="container">
-    <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
-    <div class="d-none d-sm-block">
-            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top w-100">
-                <!--     <a class="navbar-brand" href="/"><img src="static/dorans-lab-logo-icon.png?token=AMJQ_m7IT1HfJARQrQ18xUgr77T2tivWks5bJ6J-wA%3D%3D" style="width: 16%; height: 16%;"></a> -->
-                <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -7px;"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px; "></a>
-                <div>
-                    <ul class="navbar-nav" style="margin-bottom: -10px; margin-top: -10px;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>Learn</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/tools" style="color: black"><b>Tools</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>About</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black"><b>Contact</b></a>
-                        </li>
-                    </ul>
+<body class="container">
+
+        <!-- HIDDEN ON MOBILE: THIS IS THE DESKTOP NAVBAR -->
+
+        <div class="d-none d-sm-block">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -7px;"><img src="static/dorans-lab-logo-type.png" style="width: 20%; height: auto; min-width: 210px; "></a>
+                    <div>
+                        <ul class="navbar-nav" style="margin-bottom: -10px; margin-top: -10px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Learn</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/tools"><b>Tools</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>About</b></a>
+                            </li>
+                            <li class="nav-item nav-item-last">
+                                <a class="nav-link" href="#"><b>Contact</b></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
-    </div>
+        </div>
 
 
     <!-- VISIBLE ONLY ON MOBILE: THIS IS THE MOBILE NAVBAR -->
@@ -83,107 +85,87 @@
           <div class="panel panel-default" id="content" style="float: right; margin-right: 20px;  "" margin-right: 30px;">
           </div>
       </div>
-      <div class="col-lg-4" style="margin-left: 40px">
-          <div class="panel panel-default">
-              <div class="panel-body">
-                <p style="font-family: radnika-bold-condensed; font-size: 30px; margin-bottom: -4px; text-align: center;">Champion Select</p>
-                  <div class="row">
-                    <p style="text-align: center;">Type to manually select champions or click to randomize!</p><br/>
-                  </div>
-
-                  <div class="row">
-                    
-                    <table id="input-table">
-                      <tr>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <td style="background-color: #ba3f5d;">
-                              <a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #ba3f5d; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 0px;">Red Team</b></br></h3>
-                              </a>
-                              <a onclick="randomizeRedTeam();"><img class="img-fluid" src="static/mockup-assets/shuffle-circle-red.png" style="float: right; margin-top: -35px; margin-right: 20px; height: 30px; background: black; border-radius: 16px; cursor: pointer;"></a>
-                            </td>
-                          </div>
-                          <div class="col-md-6">
-
-                            <td style="background-color: #496bb9;"><a style="font-size: 40px;"><h3 style="text-align: center;"><b style="background-color: #496bb9; color: white; font-family: radnika-bold-condensed; font-size: 15px; padding: 10px;">Blue Team</b></br></h3></a>
-                              <a onclick="randomizeBlueTeam();"><img class="img-fluid" src="static/mockup-assets/shuffle-circle-blue.png" style="float: right; margin-top: -35px; margin-right: 20px; height: 30px; background: black; border-radius: 16px; cursor: pointer;"></a>
-                            </td>
-
-                          </div>
-
-                        </div>
-                      </tr>
-                      <tr>
-                        <div class="row">
-                          <div class="col-12">
-                            <td class="input-td-red"><input type="text" spellcheck="false" class="awesomecomplete redteam" value="Ashe"></td>
-                            <td class="input-td-blue"><input type="text" class="awesomecomplete blueteam"  value="Amumu"></td>
-                          </div>
-                        </div>
-                      </tr>
-                      <tr>
-                        <td class="input-td-red"><input type="text" class="awesomecomplete redteam" value="Ahri"></td>
-                        <td class="input-td-blue"><input type="text" class="awesomecomplete blueteam" value="Anivia"></td>
-                      </tr>
-
-                      <tr>
-                        <td class="input-td-red"><input type="text" class="awesomecomplete redteam"  value="Akali"></td>
-                        <td class="input-td-blue"><input type="text" class="awesomecomplete blueteam"  value="Annie"></td>
-                      </tr>
-
-                      <tr>
-                        <td class="input-td-red"><input type="text" class="awesomecomplete redteam"  value="Alistar"></td>
-                        <td class="input-td-blue"><input type="text" class="awesomecomplete blueteam"  value="Azir"></td>
-                      </tr>
-
-                      <tr>
-                        <td class="input-td-red"><input type="text" class="awesomecomplete redteam"  value="Cho'Gath"></td>
-                        <td class="input-td-blue"><input type="text" class="awesomecomplete blueteam"  value="Blitzcrank"></td>
-                      </tr>
-
-
-                      <tr>
-                        <td><p style="font-family: radnika-bold-condensed; font-size: 15px;">Synergies</p></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td class="red-synergies">
-                          <ul id="red-synergies">
-                          </ul>
-                        </td>
-                        <td class="blue-synergies">
-                          <ul id="blue-synergies">
-                          </ul>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><p style="font-family: radnika-bold-condensed; font-size: 15px;">Counters</p></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td class="red-counters">
-                          <ul id="red-counters">
-                          </ul>
-                        </td>
-                        <td class="blue-counters">
-                          <ul id="blue-counters">
-                          </ul>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><br></td>
-                        <td>
-                          <br>
-                          <button id="share-button"><a>Generate link to share</a></button>
-                        </td>
-                      </tr>
-                      </table>
-                      
-
-                  </div>
-
-              </div>
+      <div class="col-lg-4" style="margin-left: 40px;">
+        
+        <!-- Champion select -->
+        <div class="row">
+          <div class="col-12">
+            <h1 style="font-family: radnika-bold-condensed;">Champion Select</h1>
           </div>
+        </div>
+        
+        <!-- Type to manually select... -->
+        <div class="row">
+          <div class="col-12">
+            <p style="font-family: radnika-condensed;">Type fo manually select champions or click to randomize!</p>
+          </div>
+        </div>
+        
+        <!-- Red team and blue team and shuffle buttons -->
+        <div class="row">
+          <div class="col-4">
+              <p class="red-team-title">Red Team</p>
+          </div>
+          <div class="col-2">
+            <a onclick="randomizeRedTeam();"><img class="img-fluid shuffle-icon" src="static/mockup-assets/shuffle-circle-red.png"></a>
+          </div>
+          <div class="col-4">
+            <p class="blue-team-title">Blue Team</p>
+          </div>
+          <div class="col-2">
+            <a onclick="randomizeBlueTeam();"><img class="img-fluid shuffle-icon" src="static/mockup-assets/shuffle-circle-blue.png"></a>
+          </div>
+
+        </div>
+
+        <!-- One row with two columns -->
+        <div class="row">
+
+          <!-- Red team -->
+          <div class="col-5">
+            
+            <div class="redteam-input-wrapper">
+              <input type="text" class="awesomecomplete redteam" value="Ahri">
+            </div>
+            <div class="redteam-input-wrapper">
+              <input type="text" class="awesomecomplete redteam" value="Ahri">
+            </div>
+            <div class="redteam-input-wrapper">
+              <input type="text" class="awesomecomplete redteam" value="Ahri">
+            </div>
+            <div class="redteam-input-wrapper">
+              <input type="text" class="awesomecomplete redteam" value="Ahri">
+            </div>
+            <div class="redteam-input-wrapper">
+              <input type="text" class="awesomecomplete redteam" value="Ahri">
+            </div>
+
+          </div>
+          <div class="col-1"></div>
+          
+          <div class="col-5">
+            
+            <div class="blueteam-input-wrapper">
+              <input type="text" class="awesomecomplete blueteam" value="Ahri">
+            </div>
+            <div class="blueteam-input-wrapper">
+              <input type="text" class="awesomecomplete blueteam" value="Ahri">
+            </div>
+            <div class="blueteam-input-wrapper">
+              <input type="text" class="awesomecomplete blueteam" value="Ahri">
+            </div>
+            <div class="blueteam-input-wrapper">
+              <input type="text" class="awesomecomplete blueteam" value="Ahri">
+            </div>
+            <div class="blueteam-input-wrapper">
+              <input type="text" class="awesomecomplete blueteam" value="Ahri">
+            </div>
+
+          </div>
+          <div class="col-1"></div>
+        </div>
+
+             
       </div>
   </div>
 
@@ -232,8 +214,8 @@
 
 
 
-d3.selectAll(".redteam").attr("spellcheck", "false")
-d3.selectAll(".blueteam").attr("spellcheck", "false")
+d3.selectAll(".redteam").attr("spellcheck", "false");
+d3.selectAll(".blueteam").attr("spellcheck", "false");
 
 var champions = {
   "Ahri":  0.24,
@@ -537,35 +519,17 @@ function updateChampionsToIncludeCoefficient() {
   var inputs = document.getElementsByClassName("awesomecomplete");
 
   // Add in ther coefficients
-  // TODO undo bold for the coefficients
   for (var i = 0; i <inputs.length; i++) {
     var msg = inputs[i].value.split(" ")[0] + " (" + champions[inputs[i].value.split(" ")[0]] + ")";
+    var splitted = msg.split(" ");
+    var champName = splitted[0];
+    var champCoeff = splitted[1];
+    var newString = champName + ' <span class="not-bold">' + champCoeff + '</span>'
     inputs[i].value = msg;
   }
 }
 
-function parseData(data) {
-
-  // var champs = {};
-
-  // var lines = data.split("\n");
-  // console.log(lines[1]);
-  // for (var i = 1; i < lines.length; i++) {
-  //   var line = lines[i];
-  //   console.log(line.split(",")[2]);
-  // }
-}
-
 $( document ).ready(function() {
-
-  $.ajax({
-        type: "GET",
-        url: "static/table.csv",
-        dataType: "text",
-        success: function(data) {
-          parseData(data);
-        }
-     });
 
   // Make them awesomecomplete
   var inputs = document.getElementsByClassName("awesomecomplete")
@@ -783,8 +747,28 @@ d3.selectAll("g#mainCanvas").append("text")
   .attr("class", "blue-team-percentage")
   .attr("font-size", "12px");
 
-randomizeRedTeam();
-randomizeBlueTeam();
+  $.ajax({
+        type: "GET",
+        url: "static/logistic-dictionaries/Dictionaries/synergy.txt",
+        dataType: "json",
+        success: function(data) {
+          Window.synergies = data;
+          randomizeRedTeam();
+          calculateSynergiesAndCounters();
+        }
+     });
+
+  $.ajax({
+        type: "GET",
+        url: "static/logistic-dictionaries/Dictionaries/counter.txt",
+        dataType: "json",
+        success: function(data) {
+          Window.counters = data;
+          randomizeBlueTeam();
+          calculateSynergiesAndCounters();
+        }
+     });
+
 });
 
 
@@ -800,7 +784,7 @@ function transitionRedTeamTo(newAmount){
     .on("start", function repeat() {
       d3.active(this)
           .tween("text", function() {
-            var that = d3.select(this);
+            var that = d3.select(this); 
             // Prune "%"
             var i = d3.interpolateNumber(that.text().replace(/%/, ""), newAmt);
 
@@ -883,95 +867,30 @@ function randomizeBlueTeam(){
 }
 
 function calculateSynergiesAndCounters() {
-  var redInputs = document.getElementsByClassName("redteam");
-  var blueInputs = document.getElementsByClassName("blueteam");
+  var inputs = document.getElementsByClassName("awesomecomplete redteam");
 
-  var redChamps = [];
-  var blueChamps = [];
-
-  for (var i = 0; i < redInputs.length; i++) {
-    redChamps.push(redInputs[i].value.split(" ")[0]);
-    blueChamps.push(blueInputs[i].value.split(" ")[0]);
+  var currentRedTeam = [];
+  // Add in ther coefficients
+  for (var i = 0; i <inputs.length; i++) {
+    var msg = inputs[i].value.split(" ")[0] + " (" + champions[inputs[i].value.split(" ")[0]] + ")";
+    var splitted = msg.split(" ");
+    var champName = splitted[0];
+    currentRedTeam.push(champName)
   }
 
-  // First remove all current ones
-
-  d3.selectAll("ul#red-synergies li").remove()
-  d3.selectAll("ul#blue-synergies li").remove()
-  d3.selectAll("ul#red-counters li").remove()
-  d3.selectAll("ul#blue-counters li").remove()
-  // Read csv
   // Check for synergies
-  // They will look like this
 
-  var redSynergies = [["Akali", "Alistar"], ["Vi", "Volibear"]];
-  var blueSynergies = [["Anivia", "Jax"], ["Champ 1", "Champ 2"]];
-  var redCounters = [["Lulu", "Brand"]];
-  var blueCounters = [["Testing", "testing2"]];
-
-  // For each 2-element array in redSynergies
-  
-
-
-  for (var i = 0; i < redSynergies.length; i++) {
-      var msg = redSynergies[i][0] + " & " + redSynergies[i][1];
-
-      d3.selectAll("ul#red-synergies")
-        .append("li")
-        .append("p")
-        .text(msg);
+  for (var i = 0; i < currentRedTeam.length; i++) {
+    var currentSynergies = Window.synergies[currentRedTeam[i]];
+    
   }
-
-  for (var i = 0; i < blueSynergies.length; i++) {
-      var msg = blueSynergies[i][0] + " & " + blueSynergies[i][1];
-
-      d3.selectAll("ul#blue-synergies")
-        .append("li")
-        .append("p")
-        .text(msg);
-  }
-
-  for (var i = 0; i < redCounters.length; i++) {
-      var msg = redCounters[i][0] + " & " + redCounters[i][1];
-
-      d3.selectAll("ul#red-counters")
-        .append("li")
-        .append("p")
-        .text(msg);
-  }
-
-  for (var i = 0; i < blueCounters.length; i++) {
-      var msg = blueCounters[i][0] + " & " + blueCounters[i][1];
-
-      d3.selectAll("ul#blue-counters")
-        .append("li")
-        .append("p")
-        .text(msg);
-  }
-
-
-
-
-  // d3.selectAll("ul#blue-synergies")
-  //   .append("li")
-  //   .text("blue synergy here");
-
-  // // For each 2-element array in redSynergies
-  // d3.selectAll("ul#red-counters")
-  //   .append("li")
-  //   .text("red counter here");
-
-  // d3.selectAll("ul#blue-counters")
-  //   .append("li")
-  //   .text("blue counter here");
-
 }
-
 
 
 </script>
 
 </body>
+</style>
 
 
       

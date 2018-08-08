@@ -43,43 +43,70 @@
         src: url(../radnika_font/Radnika-Medium.otf);
     }
 
-
-input.redteam {
-  background: white; 
-  font-family: monospace; 
-  padding: 10px 20px; 
-  margin: 20px 10px 20px 0;
-  margin-right: -30px;
-  margin-bottom: -10px;
-  border-bottom: 1px solid transparent;
+div.redteam-input-wrapper {
+  border-bottom: 2px solid #ba3f5d;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   color: #ba3f5d;
-  font-weight: bold;
-  font-family: radnika-bold;
-  font-size: 15px;
-  background-color: transparent;
+  margin-top: 30px;
+  margin-right: -30px;
+}
+
+div.blueteam-input-wrapper {
+  border-bottom: 2px solid #496bb9;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: #496bb9;  
+  margin-top: 30px;
+  margin-right: -30px;
+}
+
+input.redteam {
+  background: white; 
+  font-family: radnika-bold; 
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: #ba3f5d;
+  font-size: 14px;
 }
 
 input.blueteam {
   background: white; 
-  font-family: monospace; 
-  padding: 10px 20px; 
-  padding-right: -30px;
-  margin: 20px 10px 20px 0px;
-  margin-bottom: -10px;
-  margin-right: -20px;
-  border-bottom: 1px solid transparent;
+  font-family: radnika-bold; 
+  border-bottom: 0px;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   color: #496bb9;
-  font-weight: bold;
-  font-family: radnika-bold;
-  font-size: 15px;
-  background-color: transparent;
+  font-size: 14px;
 }
+
+p.red-team-title {
+  background-color: #ba3f5d;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: -30px;
+  margin-right: -20px;
+  color: #EFEFEF;
+  font-family: radnika-bold-condensed;
+  font-size: 18px;
+}
+
+p.blue-team-title {
+  background-color: #496bb9;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: -30px;
+  margin-right: -20px;
+  color: #EFEFEF;
+  font-family: radnika-bold-condensed;
+  font-size: 18px;
+}
+
 
 input:focus { 
   outline: none;}
@@ -250,4 +277,12 @@ input:focus {
   td.input-td-red {
     border-right: 10px solid transparent;
     border-bottom: 2px solid #ba3f5d;
+  }
+
+  .shuffle-icon {
+    cursor: pointer;
+  }
+
+  .not-bold {
+    font-family: roboto;
   }
